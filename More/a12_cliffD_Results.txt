@@ -1,0 +1,240 @@
+a12slow dtlz7_score
+DTLZ7
+score: 
+DE,s4:  0.96
+moead,s4:  0.86
+a12slow dtlz7_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+a12slow dtlz6_score
+DTLZ6
+score: 
+DE,s4:  0.98
+moead,s4:  0.61
+a12slow dtlz6_eval
+# of Evaluation:  	
+DE,s4:  0.8
+moead,s4:  1.0
+
+a12slow dtlz5_score
+DTLZ5
+score: 
+DE,s4:  0.0
+moead,s4:  0.61
+a12slow dtlz5_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+a12slow dtlz1_score
+DTLZ1
+score: 
+DE,s4:  0.0
+moead,s4:  0.2
+a12slow dtlz1_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+a12slow fonseca_score
+fonseca
+score: 
+DE,s4:  0.0
+moead,s4:  0.22
+a12slow fonseca_eval
+# of Evaluation:  	
+DE,s4:  0.7
+moead,s4:  1.0
+
+a12slow Kursawe_score
+fonseca
+score: 
+DE,s4:  1.0
+moead,s4:  0.18
+a12slow Kursawe_eval
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+a12slow ZDT1_score
+ZDT1
+score: 
+DE,s4:  1.0
+moead,s4:  0.56
+a12slow ZDT1_eval
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+a12slow ZDT3_score
+ZDT3
+score: 
+DE,s4:  1.0
+moead,s4:  0.88
+a12slow ZDT3_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+a12slow Osyczka_score
+ZDT3
+score: 
+DE,s4:  1.0
+moead,s4:  0.83
+a12slow Osyczka_eval
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+a12slow Schwefel_score
+Schwefel
+score: 
+DE,s4:  0.99
+moead,s4:  0.12
+a12slow Schwefel_eval
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+a12slow XOMO_score
+XOMO
+score: 
+DE,s4:  0.0
+moead,s4:  0.13
+a12slow XOMO_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+a12slow POM3_score
+POM3
+score: 
+DE,s4:  0.27
+moead,s4:  0.175
+a12slow POM3_eval
+# of Evaluation:  	
+DE,s4:  0.8
+moead,s4:  1.0
+
+cliffdelta dtlz7_score
+DTLZ7
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta dtlz7_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta dtlz6_score
+DTLZ6
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta dtlz6_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta dtlz5_score
+DTLZ5
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta dtlz5_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta dtlz1_score
+DTLZ1
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta dtlz1_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta fonseca_score
+fonseca
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta fonseca_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta Kursawe_score
+fonseca
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta Kursawe_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta ZDT1_score
+ZDT1
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta ZDT1_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta ZDT3_score
+ZDT3
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta ZDT3_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta Osyczka_score
+ZDT3
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta Osyczka_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta Schwefel_score
+Schwefel
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta Schwefel_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta XOMO_score
+XOMO
+score: 
+DE,s4:  1.0
+moead,s4:  1.0
+cliffdelta XOMO_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+cliffdelta POM3_score
+POM3
+score: 
+DE,s4:  0.82
+moead,s4:  0.73
+cliffdelta POM3_eval
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+

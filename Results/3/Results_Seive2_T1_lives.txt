@@ -1,0 +1,1271 @@
+Model Name: DTLZ1
+Date: 12/12/2014
+Baseline Finished:  -303.17691991 500.522746125
+Seive2_T1 . Generate:  0
+Generate:  1892
+. Generate:  0
+Generate:  1692
+. Generate:  0
+Generate:  1670
+. Generate:  0
+Generate:  1612
+. Generate:  0
+Generate:  1888
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  3 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  8 1
+Early Stop:  8 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  5 4
+Early Stop:  7 3
+Early Stop:  9 2
+Early Stop:  10 1
+Early Stop:  5 4
+Early Stop:  8 3
+Early Stop:  10 2
+Early Stop:  12 1
+Early Stop:  6 4
+Early Stop:  11 3
+Early Stop:  12 2
+Early Stop:  15 1
+Early Stop:  6 4
+Early Stop:  8 3
+Early Stop:  11 2
+Early Stop:  12 1
+Early Stop:  9 4
+Early Stop:  12 3
+Early Stop:  13 2
+Early Stop:  16 1
+Early Stop:  12 4
+Early Stop:  13 3
+Early Stop:  15 2
+Early Stop:  17 1
+. Early Stop:  9 4
+Early Stop:  11 3
+Early Stop:  13 2
+Early Stop:  14 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  8 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  9 2
+Early Stop:  12 1
+Early Stop:  3 4
+Early Stop:  4 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  7 4
+Early Stop:  8 3
+Early Stop:  9 2
+Early Stop:  12 1
+Early Stop:  5 4
+Early Stop:  8 3
+Early Stop:  12 2
+Early Stop:  13 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  3 4
+Early Stop:  7 3
+Early Stop:  8 2
+Early Stop:  10 1
+Early Stop:  2 4
+Early Stop:  7 3
+Early Stop:  9 2
+Early Stop:  10 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  8 2
+Early Stop:  9 1
+Early Stop:  8 4
+Early Stop:  9 3
+Early Stop:  11 2
+Early Stop:  12 1
+. Early Stop:  2 4
+Early Stop:  3 3
+Early Stop:  5 2
+Early Stop:  6 1
+Early Stop:  2 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  11 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  11 1
+Early Stop:  2 4
+Early Stop:  7 3
+Early Stop:  9 2
+Early Stop:  10 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  9 2
+Early Stop:  10 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  8 1
+. Early Stop:  3 4
+Early Stop:  14 3
+Early Stop:  16 2
+Early Stop:  17 1
+Early Stop:  4 4
+Early Stop:  12 3
+Early Stop:  13 2
+Early Stop:  14 1
+Early Stop:  5 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  12 1
+Early Stop:  8 4
+Early Stop:  10 3
+Early Stop:  11 2
+Early Stop:  14 1
+Early Stop:  10 4
+Early Stop:  11 3
+Early Stop:  12 2
+Early Stop:  14 1
+Early Stop:  12 4
+Early Stop:  13 3
+Early Stop:  14 2
+Early Stop:  15 1
+Early Stop:  3 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  8 1
+. Early Stop:  4 4
+Early Stop:  7 3
+Early Stop:  10 2
+Early Stop:  12 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  6 2
+Early Stop:  8 1
+Early Stop:  8 4
+Early Stop:  12 3
+Early Stop:  14 2
+Early Stop:  15 1
+Early Stop:  4 4
+Early Stop:  6 3
+Early Stop:  8 2
+Early Stop:  12 1
+Early Stop:  4 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  10 1
+Early Stop:  8 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  12 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive3 ,      23  ,     9 (----   * --    |              ), 0.09,  0.18,  0.23,  0.27,  0.30
+   1 ,       Seive4 ,      26  ,     6 (    --  *--    |              ), 0.18,  0.21,  0.26,  0.27,  0.31
+   2 ,       Seive2 ,      31  ,     1 (           *   |              ), 0.30,  0.31,  0.31,  0.32,  0.33
+   3 ,    Seive2_T1 ,      35  ,     3 (             *-|              ), 0.34,  0.34,  0.35,  0.37,  0.38
+   4 ,     baseline ,      38  ,     1 (               *              ), 0.38,  0.38,  0.38,  0.38,  0.40
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    23600  ,  2400 (*              |              ),230.00, 235.00, 236.00, 259.00, 280.00
+   2 ,    Seive2_T1 ,    34000  ,   600 (*              |              ),338.00, 340.00, 340.00, 346.00, 349.00
+   3 ,       Seive4 ,    298800  ,  65000 (     -----   * |              ),1380.00, 2398.00, 2988.00, 3048.00, 3212.00
+   4 ,       Seive3 ,    562500  ,  37900 (              -|--------  *-- ),3161.00, 5311.00, 5625.00, 5690.00, 6393.00
+Model Name: DTLZ2
+Date: 12/12/2014
+Baseline Finished:  7.83351582829e-11 3.93552018817
+Seive2_T1 . Generate:  0
+Generate:  1614
+. Generate:  0
+Generate:  1822
+. Generate:  0
+Generate:  1798
+. Generate:  0
+Generate:  1616
+. Generate:  0
+Generate:  1672
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  9 4
+Early Stop:  11 3
+Early Stop:  13 2
+Early Stop:  15 1
+Early Stop:  3 4
+Early Stop:  5 3
+Early Stop:  8 2
+Early Stop:  10 1
+Early Stop:  6 4
+Early Stop:  7 3
+Early Stop:  8 2
+Early Stop:  10 1
+Early Stop:  3 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  8 1
+Early Stop:  2 4
+Early Stop:  3 3
+Early Stop:  5 2
+Early Stop:  6 1
+Early Stop:  0 4
+Early Stop:  3 3
+Early Stop:  4 2
+Early Stop:  9 1
+. Early Stop:  4 4
+Early Stop:  11 3
+Early Stop:  12 2
+Early Stop:  15 1
+Early Stop:  2 4
+Early Stop:  7 3
+Early Stop:  8 2
+Early Stop:  11 1
+Early Stop:  8 4
+Early Stop:  10 3
+Early Stop:  11 2
+Early Stop:  13 1
+Early Stop:  5 4
+Early Stop:  10 3
+Early Stop:  14 2
+Early Stop:  16 1
+Early Stop:  3 4
+Early Stop:  6 3
+Early Stop:  9 2
+Early Stop:  13 1
+Early Stop:  3 4
+Early Stop:  4 3
+Early Stop:  7 2
+Early Stop:  10 1
+Early Stop:  6 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  12 1
+. Early Stop:  4 4
+Early Stop:  7 3
+Early Stop:  12 2
+Early Stop:  14 1
+Early Stop:  3 4
+Early Stop:  4 3
+Early Stop:  8 2
+Early Stop:  9 1
+Early Stop:  5 4
+Early Stop:  10 3
+Early Stop:  12 2
+Early Stop:  13 1
+Early Stop:  7 4
+Early Stop:  8 3
+Early Stop:  11 2
+Early Stop:  12 1
+Early Stop:  2 4
+Early Stop:  3 3
+Early Stop:  4 2
+Early Stop:  5 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  8 2
+Early Stop:  9 1
+Early Stop:  11 4
+Early Stop:  12 3
+Early Stop:  13 2
+Early Stop:  15 1
+. Early Stop:  11 4
+Early Stop:  12 3
+Early Stop:  13 2
+Early Stop:  15 1
+Early Stop:  11 4
+Early Stop:  12 3
+Early Stop:  15 2
+Early Stop:  17 1
+Early Stop:  0 4
+Early Stop:  4 3
+Early Stop:  7 2
+Early Stop:  9 1
+Early Stop:  5 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  15 1
+Early Stop:  2 4
+Early Stop:  8 3
+Early Stop:  14 2
+Early Stop:  15 1
+Early Stop:  6 4
+Early Stop:  7 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  1 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  9 1
+Early Stop:  2 4
+Early Stop:  3 3
+Early Stop:  7 2
+Early Stop:  9 1
+. Early Stop:  1 4
+Early Stop:  8 3
+Early Stop:  9 2
+Early Stop:  11 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  4 2
+Early Stop:  5 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  11 2
+Early Stop:  12 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  10 1
+Early Stop:  9 4
+Early Stop:  11 3
+Early Stop:  12 2
+Early Stop:  13 1
+Early Stop:  6 4
+Early Stop:  7 3
+Early Stop:  13 2
+Early Stop:  15 1
+Early Stop:  1 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  10 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive4 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,       Seive3 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,       Seive2 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Seive2_T1 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,     baseline ,       0  ,     1 (*              |              ), 0.00,  0.00,  0.00,  0.01,  0.04
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    24800  ,  3400 (*              |              ),200.00, 247.00, 248.00, 281.00, 292.00
+   2 ,    Seive2_T1 ,    34800  ,  1400 (*              |              ),334.00, 337.00, 348.00, 351.00, 352.00
+   3 ,       Seive4 ,    266200  ,  131600 (        -  *   |              ),2119.00, 2234.00, 2662.00, 3550.00, 3699.00
+   4 ,       Seive3 ,    487600  ,  125100 (               |     *   ---- ),4458.00, 4487.00, 4876.00, 5738.00, 6791.00
+Model Name: DTLZ3
+Date: 12/12/2014
+Baseline Finished:  5.20597316747e-08 3401.27063623
+Seive2_T1 . Generate:  0
+Generate:  1520
+. Generate:  0
+Generate:  1956
+. Generate:  0
+Generate:  1798
+. Generate:  0
+Generate:  1616
+. Generate:  0
+Generate:  1816
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  9 4
+Early Stop:  11 3
+Early Stop:  13 2
+Early Stop:  15 1
+Early Stop:  3 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  8 1
+Early Stop:  6 4
+Early Stop:  9 3
+Early Stop:  12 2
+Early Stop:  15 1
+Early Stop:  9 4
+Early Stop:  13 3
+Early Stop:  14 2
+Early Stop:  15 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  6 2
+Early Stop:  7 1
+Early Stop:  2 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  9 1
+. Early Stop:  7 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  7 4
+Early Stop:  8 3
+Early Stop:  9 2
+Early Stop:  11 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  7 2
+Early Stop:  8 1
+Early Stop:  7 4
+Early Stop:  11 3
+Early Stop:  15 2
+Early Stop:  16 1
+Early Stop:  8 4
+Early Stop:  10 3
+Early Stop:  12 2
+Early Stop:  13 1
+Early Stop:  3 4
+Early Stop:  4 3
+Early Stop:  6 2
+Early Stop:  8 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  8 1
+. Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  6 2
+Early Stop:  8 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  6 2
+Early Stop:  8 1
+Early Stop:  9 4
+Early Stop:  14 3
+Early Stop:  18 2
+Early Stop:  19 1
+Early Stop:  9 4
+Early Stop:  11 3
+Early Stop:  13 2
+Early Stop:  14 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  8 1
+Early Stop:  3 4
+Early Stop:  7 3
+Early Stop:  8 2
+Early Stop:  9 1
+Early Stop:  5 4
+Early Stop:  6 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  1 4
+Early Stop:  6 3
+Early Stop:  9 2
+Early Stop:  10 1
+. Early Stop:  11 4
+Early Stop:  13 3
+Early Stop:  15 2
+Early Stop:  16 1
+Early Stop:  6 4
+Early Stop:  9 3
+Early Stop:  10 2
+Early Stop:  11 1
+Early Stop:  5 4
+Early Stop:  12 3
+Early Stop:  16 2
+Early Stop:  17 1
+Early Stop:  2 4
+Early Stop:  5 3
+Early Stop:  8 2
+Early Stop:  10 1
+Early Stop:  1 4
+Early Stop:  4 3
+Early Stop:  5 2
+Early Stop:  7 1
+Early Stop:  3 4
+Early Stop:  5 3
+Early Stop:  8 2
+Early Stop:  10 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  6 2
+Early Stop:  11 1
+Early Stop:  5 4
+Early Stop:  9 3
+Early Stop:  14 2
+Early Stop:  15 1
+. Early Stop:  2 4
+Early Stop:  4 3
+Early Stop:  5 2
+Early Stop:  8 1
+Early Stop:  3 4
+Early Stop:  4 3
+Early Stop:  6 2
+Early Stop:  9 1
+Early Stop:  4 4
+Early Stop:  7 3
+Early Stop:  9 2
+Early Stop:  10 1
+Early Stop:  7 4
+Early Stop:  8 3
+Early Stop:  11 2
+Early Stop:  12 1
+Early Stop:  6 4
+Early Stop:  7 3
+Early Stop:  14 2
+Early Stop:  17 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive4 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,       Seive3 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,       Seive2 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Seive2_T1 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,     baseline ,       0  ,     1 (*              |              ), 0.00,  0.00,  0.00,  0.01,  0.04
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    22100  ,  4800 (*              |              ),166.00, 210.00, 221.00, 258.00, 267.00
+   2 ,    Seive2_T1 ,    33700  ,  1100 (*              |              ),336.00, 337.00, 337.00, 348.00, 349.00
+   3 ,       Seive4 ,    257300  ,  36200 (         -* ---|-             ),2173.00, 2513.00, 2573.00, 2875.00, 4014.00
+   4 ,       Seive3 ,    566500  ,  187900 (               |         *  - ),4355.00, 4440.00, 5665.00, 6319.00, 6741.00
+Model Name: DTLZ4
+Date: 12/12/2014
+Baseline Finished:  0.00290777933399 7.24080146444
+Seive2_T1 . Generate:  0
+Generate:  1836
+. Generate:  0
+Generate:  1568
+. Generate:  0
+Generate:  1934
+. Generate:  0
+Generate:  2002
+. Generate:  0
+Generate:  1462
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  3 3
+Early Stop:  4 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive3 ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,       Seive2 ,       3  ,     6 (*-             |              ),-0.00,  0.00,  0.03,  0.06,  0.06
+   1 ,       Seive4 ,       7  ,     3 (- *            |              ), 0.01,  0.05,  0.07,  0.08,  0.11
+   1 ,    Seive2_T1 ,      16  ,    19 (     * -       |              ), 0.01,  0.02,  0.16,  0.21,  0.25
+   2 ,     baseline ,      37  ,    10 (         -- *--|              ), 0.29,  0.33,  0.37,  0.41,  0.50
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    27800  ,  5200 (*              |              ),237.00, 244.00, 278.00, 296.00, 326.00
+   2 ,    Seive2_T1 ,    33900  ,   600 (*              |              ),338.00, 339.00, 339.00, 345.00, 351.00
+   3 ,       Seive4 ,    136100  ,  53500 (  - *          |              ),859.00, 963.00, 1361.00, 1498.00, 1583.00
+   4 ,       Seive3 ,    602600  ,  146100 (               |   ---  *   - ),4755.00, 5388.00, 6026.00, 6849.00, 7225.00
+Model Name: DTLZ5
+Date: 12/12/2014
+Baseline Finished:  -0.386151295563 1.38099247289
+Seive2_T1 . Generate:  0
+Generate:  1700
+. Generate:  0
+Generate:  2120
+. Generate:  0
+Generate:  1742
+. Generate:  0
+Generate:  1520
+. Generate:  0
+Generate:  1846
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  6 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  4 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+. Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  4 3
+Early Stop:  5 2
+Early Stop:  7 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  6 2
+Early Stop:  7 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+. Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  4 4
+Early Stop:  5 3
+Early Stop:  7 2
+Early Stop:  9 1
+Early Stop:  3 4
+Early Stop:  4 3
+Early Stop:  8 2
+Early Stop:  9 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  3 3
+Early Stop:  4 2
+Early Stop:  7 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+. Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  4 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  3 3
+Early Stop:  6 2
+Early Stop:  7 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  2 4
+Early Stop:  3 3
+Early Stop:  6 2
+Early Stop:  8 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  1 4
+Early Stop:  3 3
+Early Stop:  4 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive3 ,      14  ,     5 (               |-- *          ), 0.09,  0.12,  0.14,  0.17,  0.17
+   1 ,       Seive4 ,      20  ,     1 (               |  --- *       ), 0.12,  0.19,  0.20,  0.20,  0.21
+   2 ,       Seive2 ,      21  ,     1 (               |     - *      ), 0.18,  0.20,  0.21,  0.21,  0.21
+   2 ,    Seive2_T1 ,      21  ,     1 (               |     --*      ), 0.17,  0.21,  0.21,  0.22,  0.22
+   2 ,     baseline ,      22  ,     0 (               |       *      ), 0.22,  0.22,  0.22,  0.22,  0.22
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    25200  ,  3100 (*              |              ),224.00, 243.00, 252.00, 274.00, 287.00
+   2 ,    Seive2_T1 ,    33900  ,   700 (*              |              ),336.00, 337.00, 339.00, 344.00, 353.00
+   3 ,       Seive4 ,    167800  ,  17800 (       *--     |              ),1550.00, 1557.00, 1678.00, 1735.00, 2307.00
+   4 ,       Seive3 ,    537600  ,  63700 (               |  ------- *   ),3855.00, 5257.00, 5376.00, 5894.00, 6036.00
+Model Name: DTLZ6
+Date: 12/12/2014
+Baseline Finished:  -8.96835540987 13.5306999333
+Seive2_T1 . Generate:  0
+Generate:  1692
+. Generate:  0
+Generate:  1890
+. Generate:  0
+Generate:  1884
+. Generate:  0
+Generate:  1846
+. Generate:  0
+Generate:  2004
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  4 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  3 2
+Early Stop:  5 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  1 4
+Early Stop:  2 3
+Early Stop:  3 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  4 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive3 ,      26  ,    11 (----------     |*-            ),-0.02,  0.15,  0.26,  0.26,  0.28
+   2 ,       Seive4 ,      32  ,     4 (               |  --*         ), 0.28,  0.32,  0.32,  0.36,  0.36
+   2 ,       Seive2 ,      35  ,     1 (               |      *       ), 0.35,  0.35,  0.35,  0.36,  0.36
+   3 ,    Seive2_T1 ,      39  ,     0 (               |        *     ), 0.38,  0.39,  0.39,  0.39,  0.39
+   3 ,     baseline ,      40  ,     0 (               |         *    ), 0.40,  0.40,  0.40,  0.40,  0.40
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    24900  ,  3000 (*              |              ),228.00, 235.00, 249.00, 265.00, 320.00
+   1 ,    Seive2_T1 ,    33700  ,   400 (*              |              ),332.00, 335.00, 337.00, 339.00, 351.00
+   1 ,       Seive4 ,    126300  ,  53300 (   -*          |              ),976.00, 1135.00, 1263.00, 1668.00, 1680.00
+   2 ,       Seive3 ,    497900  ,  46700 (               |     -* ----- ),4737.00, 4931.00, 4979.00, 5398.00, 6478.00
+Model Name: DTLZ7
+Date: 12/12/2014
+Baseline Finished:  60.694265255 154.428385351
+Seive2_T1 . Generate:  0
+Generate:  2056
+. Generate:  0
+Generate:  1696
+. Generate:  0
+Generate:  1722
+. Generate:  0
+Generate:  1974
+. Generate:  0
+Generate:  1972
+
+Seive3 . . . . .
+Seive2 . . . . .
+Seive4 . Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+. Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+Early Stop:  0 4
+Early Stop:  1 3
+Early Stop:  2 2
+Early Stop:  3 1
+
+==========================================================
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive3 ,       8  ,     4 (-*-            |              ), 0.03,  0.06,  0.08,  0.10,  0.11
+   2 ,       Seive2 ,      14  ,     6 ( -  *          |              ), 0.08,  0.09,  0.14,  0.15,  0.16
+   2 ,       Seive4 ,      17  ,     3 (   --*-        |              ), 0.13,  0.16,  0.17,  0.19,  0.22
+   3 ,    Seive2_T1 ,      28  ,     1 (      ---*--   |              ), 0.20,  0.27,  0.28,  0.28,  0.35
+   4 ,     baseline ,      49  ,    16 (           ----| *  ---       ), 0.31,  0.42,  0.49,  0.55,  0.63
+
+rank ,         name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,       Seive2 ,    25500  ,  1100 (*              |              ),201.00, 247.00, 255.00, 258.00, 276.00
+   2 ,    Seive2_T1 ,    34200  ,   500 (*              |              ),334.00, 338.00, 342.00, 343.00, 343.00
+   3 ,       Seive4 ,    121000  ,  6200 (   -*          |              ),965.00, 1210.00, 1210.00, 1272.00, 1365.00
+   4 ,       Seive3 ,    666000  ,  38700 (               |       ---- * ),5526.00, 6345.00, 6660.00, 6732.00, 6937.00

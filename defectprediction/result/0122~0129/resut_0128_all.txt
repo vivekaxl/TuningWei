@@ -1,0 +1,1218 @@
+Begin time :2015-01-28 16:21:15
+Dataset: ivy
+bestscore : 75
+infoPrune : 0.69
+threshold : 1
+treeMin : 6
+DTreePrune : False
+wriggle : 0.41
+depthMax : 19
+depthMin : 5
+minSize : 0.62
+wherePrune : True
+Evaluations : 270
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 12.3398990631
+bestscore : 73
+evaluation : 140
+criterion : entropy
+splitter : best
+max_features : 0.7
+max_depth : 25
+min_samples_split : 17
+min_samples_leaf : 17
+max_leaf_nodes : 91
+Tuned_Cart Running Time: 9.74147987366
+Naive_Cart Running Time: 0.792587041855
+Naive_RFst Running Time: 1.6616871357
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      37  ,     0 (*              |              ), 0.37,  0.37,  0.37,  0.37,  0.38
+   2 ,    Naive_Cart: N-Def ,      51  ,     0 (       *       |              ), 0.51,  0.51,  0.51,  0.51,  0.51
+   2 ,   Tuned_WHERE: Y-Def ,      56  ,     0 (          *    |              ), 0.57,  0.57,  0.57,  0.57,  0.57
+   3 ,    Naive_RFst: N-Def ,      66  ,     3 (               | *            ), 0.66,  0.66,  0.69,  0.69,  0.72
+   3 ,    Tuned_Cart: N-Def ,      68  ,     0 (               |*             ), 0.68,  0.68,  0.68,  0.68,  0.68
+   3 ,    Naive_RFst: Y-Def ,      65  ,    15 (          ---- |   *          ), 0.57,  0.65,  0.73,  0.78,  0.78
+   4 ,   Tuned_WHERE: N-Def ,      71  ,     0 (               |  *           ), 0.71,  0.71,  0.71,  0.71,  0.71
+   5 ,    Tuned_Cart: Y-Def ,      83  ,     0 (               |        *     ), 0.83,  0.83,  0.83,  0.83,  0.83
+   6 ,    Naive_Cart: Y-Def ,      85  ,     0 (               |         *    ), 0.85,  0.85,  0.85,  0.85,  0.85
+   7 ,   Naive_WHERE: Y-Def ,      93  ,     0 (               |             *), 0.93,  0.93,  0.93,  0.93,  0.93
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       8  ,     0 (*              |              ), 0.08,  0.08,  0.08,  0.08,  0.08
+   2 ,    Naive_Cart: N-Def ,      15  ,     0 (   *           |              ), 0.15,  0.15,  0.15,  0.15,  0.15
+   3 ,    Tuned_Cart: N-Def ,      18  ,     0 (     *         |              ), 0.18,  0.18,  0.18,  0.18,  0.18
+   4 ,   Tuned_WHERE: Y-Def ,      28  ,     0 (           *   |              ), 0.29,  0.29,  0.29,  0.29,  0.29
+   5 ,    Naive_RFst: N-Def ,      28  ,    12 (              *|-----         ), 0.23,  0.23,  0.35,  0.38,  0.48
+   5 ,    Tuned_Cart: Y-Def ,      32  ,     0 (             * |              ), 0.32,  0.32,  0.32,  0.32,  0.32
+   5 ,    Naive_RFst: Y-Def ,      31  ,     3 (           -  *|              ), 0.30,  0.31,  0.34,  0.34,  0.38
+   6 ,   Tuned_WHERE: N-Def ,      43  ,     0 (               |   *          ), 0.43,  0.43,  0.43,  0.43,  0.45
+   6 ,    Naive_Cart: Y-Def ,      49  ,     0 (               |      *       ), 0.49,  0.49,  0.49,  0.49,  0.49
+   7 ,   Naive_WHERE: Y-Def ,      63  ,     0 (               |             *), 0.63,  0.63,  0.63,  0.63,  0.63
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,      16  ,     0 (*              |              ), 0.16,  0.16,  0.16,  0.16,  0.16
+   2 ,    Naive_Cart: Y-Def ,      18  ,     0 (*              |              ), 0.18,  0.18,  0.18,  0.18,  0.18
+   3 ,   Tuned_WHERE: Y-Def ,      20  ,     0 ( *             |              ), 0.20,  0.20,  0.20,  0.20,  0.20
+   3 ,    Naive_RFst: Y-Def ,      21  ,     1 ( *             |              ), 0.19,  0.21,  0.21,  0.23,  0.24
+   4 ,    Tuned_Cart: Y-Def ,      25  ,     0 (   *           |              ), 0.25,  0.25,  0.25,  0.25,  0.25
+   5 ,   Tuned_WHERE: N-Def ,      93  ,     0 (               |            * ), 0.93,  0.93,  0.93,  0.93,  0.93
+   6 ,    Naive_RFst: N-Def ,      94  ,     2 (               |            * ), 0.93,  0.94,  0.95,  0.96,  0.96
+   7 ,    Naive_Cart: N-Def ,      96  ,     0 (               |             *), 0.96,  0.96,  0.96,  0.96,  0.96
+   8 ,   Naive_WHERE: N-Def ,      97  ,     0 (               |             *), 0.97,  0.97,  0.97,  0.97,  0.98
+   8 ,    Tuned_Cart: N-Def ,      97  ,     0 (               |             *), 0.97,  0.97,  0.97,  0.97,  0.97
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      53  ,     0 (*              |              ), 0.53,  0.53,  0.53,  0.53,  0.54
+   1 ,   Naive_WHERE: Y-Def ,      53  ,     0 (*              |              ), 0.53,  0.53,  0.53,  0.53,  0.54
+   2 ,    Naive_Cart: Y-Def ,      64  ,     0 (               *              ), 0.64,  0.64,  0.64,  0.64,  0.64
+   2 ,   Tuned_WHERE: N-Def ,      64  ,     1 (               *              ), 0.63,  0.63,  0.64,  0.64,  0.64
+   2 ,   Tuned_WHERE: Y-Def ,      64  ,     1 (               *              ), 0.63,  0.63,  0.64,  0.64,  0.64
+   2 ,    Naive_Cart: N-Def ,      64  ,     0 (               *              ), 0.64,  0.64,  0.64,  0.64,  0.64
+   3 ,    Naive_RFst: N-Def ,      67  ,     3 (              -|--    *  ---  ), 0.63,  0.66,  0.69,  0.71,  0.73
+   3 ,    Naive_RFst: Y-Def ,      67  ,     3 (              -|--    *  ---  ), 0.63,  0.66,  0.69,  0.71,  0.73
+   4 ,    Tuned_Cart: Y-Def ,      74  ,     0 (               |             *), 0.74,  0.74,  0.74,  0.74,  0.74
+   4 ,    Tuned_Cart: N-Def ,      74  ,     0 (               |             *), 0.74,  0.74,  0.74,  0.74,  0.74
+End time :2015-01-28 16:27:09
+
+
+Begin time :2015-01-27 09:38:09
+Dataset: kc3
+bestscore : 45
+infoPrune : 0.59
+threshold : 0.16
+treeMin : 5
+DTreePrune : True
+wriggle : 0.23
+depthMax : 8
+depthMin : 1
+minSize : 0.5
+wherePrune : False
+Evaluations : 100
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 5.70418095589
+bestscore : 99
+evaluation : 0
+criterion : entropy
+splitter : best
+max_features : 0.76
+max_depth : 14
+min_samples_split : 19
+min_samples_leaf : 17
+max_leaf_nodes : 814
+Tuned_Cart Running Time: 24.5850110054
+Naive_Cart Running Time: 0.357738018036
+Naive_RFst Running Time: 1.0927028656
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,      41  ,     0 (*              |              ), 0.41,  0.41,  0.41,  0.41,  0.41
+   1 ,   Naive_WHERE: N-Def ,      41  ,     0 (*              |              ), 0.41,  0.41,  0.41,  0.41,  0.41
+   2 ,    Naive_RFst: Y-Def ,      71  ,     8 (            -  *-             ), 0.66,  0.68,  0.71,  0.74,  0.76
+   3 ,    Tuned_Cart: Y-Def ,      97  ,     0 (               |            * ), 0.97,  0.97,  0.97,  0.97,  0.97
+   3 ,   Tuned_WHERE: Y-Def ,      97  ,     0 (               |            * ), 0.97,  0.97,  0.97,  0.97,  0.97
+   3 ,   Naive_WHERE: Y-Def ,      97  ,     0 (               |            * ), 0.97,  0.97,  0.97,  0.97,  0.97
+   3 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Naive_RFst: N-Def ,     100  ,     0 (               |            -*), 0.97,  1.00,  1.00,  1.00,  1.00
+   3 ,    Tuned_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Naive_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_Cart: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Tuned_Cart: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.03
+   1 ,   Tuned_WHERE: N-Def ,       3  ,     0 ( *             |              ), 0.03,  0.03,  0.03,  0.03,  0.03
+   1 ,   Naive_WHERE: N-Def ,       3  ,     0 ( *             |              ), 0.03,  0.03,  0.03,  0.03,  0.03
+   1 ,    Tuned_Cart: N-Def ,       3  ,     0 ( *             |              ), 0.03,  0.03,  0.03,  0.03,  0.03
+   2 ,    Naive_RFst: N-Def ,      28  ,     6 (              *|              ), 0.26,  0.26,  0.29,  0.34,  0.34
+   3 ,   Tuned_WHERE: Y-Def ,      59  ,     0 (               |             *), 0.59,  0.59,  0.59,  0.59,  0.59
+   3 ,   Naive_WHERE: Y-Def ,      59  ,     0 (               |             *), 0.59,  0.59,  0.59,  0.59,  0.59
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: Y-Def ,      63  ,     0 (*              |              ), 0.63,  0.63,  0.63,  0.63,  0.63
+   1 ,   Naive_WHERE: Y-Def ,      63  ,     0 (*              |              ), 0.63,  0.63,  0.63,  0.63,  0.63
+   2 ,    Naive_RFst: N-Def ,      77  ,     4 (        -- *-  |              ), 0.74,  0.76,  0.77,  0.79,  0.80
+   3 ,   Tuned_WHERE: N-Def ,      94  ,     0 (               |         *    ), 0.94,  0.94,  0.94,  0.94,  0.94
+   3 ,   Naive_WHERE: N-Def ,      94  ,     0 (               |         *    ), 0.94,  0.94,  0.94,  0.94,  0.94
+   4 ,    Tuned_Cart: N-Def ,      97  ,     0 (               |           *  ), 0.97,  0.97,  0.97,  0.97,  0.97
+   5 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   5 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   5 ,    Naive_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   5 ,    Naive_RFst: Y-Def ,     100  ,     0 (               |           --*), 0.97,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,      56  ,     0 (*              |              ), 0.57,  0.57,  0.57,  0.57,  0.57
+   1 ,   Naive_WHERE: N-Def ,      56  ,     0 (*              |              ), 0.57,  0.57,  0.57,  0.57,  0.57
+   1 ,   Tuned_WHERE: Y-Def ,      56  ,     0 (*              |              ), 0.57,  0.57,  0.57,  0.57,  0.57
+   1 ,   Naive_WHERE: Y-Def ,      56  ,     0 (*              |              ), 0.57,  0.57,  0.57,  0.57,  0.57
+   2 ,    Naive_RFst: N-Def ,      82  ,     5 (               |  *-          ), 0.79,  0.81,  0.83,  0.85,  0.87
+   2 ,    Naive_RFst: Y-Def ,      82  ,     5 (               |  *-          ), 0.79,  0.81,  0.83,  0.85,  0.87
+   3 ,    Tuned_Cart: Y-Def ,      99  ,     0 (               |             *), 0.99,  0.99,  0.99,  0.99,  0.99
+   3 ,    Tuned_Cart: N-Def ,      99  ,     0 (               |             *), 0.99,  0.99,  0.99,  0.99,  0.99
+   4 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   4 ,    Naive_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+End time :2015-01-27 09:39:53
+
+
+
+Begin time :2015-01-27 09:39:53
+Dataset: log4j
+bestscore : 78
+infoPrune : 0.66
+threshold : 0.46
+treeMin : 3
+DTreePrune : True
+wriggle : 0.6
+depthMax : 15
+depthMin : 4
+minSize : 0.77
+wherePrune : False
+Evaluations : 230
+Tuned_Where Running Time: 1.90734863281e-06
+Naive_Where Running Time: 14.3571691513
+bestscore : 59
+evaluation : 90
+criterion : entropy
+splitter : best
+max_features : 0.21
+max_depth : 22
+min_samples_split : 12
+min_samples_leaf : 1
+max_leaf_nodes : 927
+Tuned_Cart Running Time: 5.97733402252
+Naive_Cart Running Time: 0.574038028717
+Naive_RFst Running Time: 1.22879099846
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,      24  ,     1 (*              |              ), 0.23,  0.24,  0.25,  0.25,  0.27
+   2 ,    Naive_Cart: Y-Def ,      38  ,     0 (     *         |              ), 0.38,  0.38,  0.38,  0.38,  0.38
+   3 ,   Tuned_WHERE: Y-Def ,      39  ,     0 (      *        |              ), 0.39,  0.39,  0.39,  0.39,  0.39
+   4 ,    Tuned_Cart: Y-Def ,      44  ,     0 (        *      |              ), 0.44,  0.44,  0.44,  0.44,  0.44
+   5 ,   Naive_WHERE: Y-Def ,      44  ,     2 (        *      |              ), 0.44,  0.44,  0.46,  0.46,  0.46
+   6 ,   Naive_WHERE: N-Def ,      63  ,     6 (               | *            ), 0.63,  0.63,  0.69,  0.69,  0.69
+   7 ,   Tuned_WHERE: N-Def ,      81  ,     0 (               |      *       ), 0.81,  0.81,  0.81,  0.81,  0.81
+   8 ,    Tuned_Cart: N-Def ,      88  ,     0 (               |         *    ), 0.88,  0.88,  0.88,  0.88,  0.88
+   8 ,    Naive_Cart: N-Def ,      88  ,     0 (               |         *    ), 0.88,  0.88,  0.88,  0.88,  0.88
+   9 ,    Naive_RFst: N-Def ,      94  ,     0 (               |           *- ), 0.94,  0.94,  0.94,  0.94,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,       6  ,     0 (--*            |              ), 0.00,  0.06,  0.06,  0.06,  0.06
+   2 ,    Naive_Cart: Y-Def ,      13  ,     0 (     *         |              ), 0.13,  0.13,  0.13,  0.13,  0.13
+   2 ,    Tuned_Cart: Y-Def ,      13  ,     0 (     *         |              ), 0.13,  0.13,  0.13,  0.13,  0.13
+   3 ,   Tuned_WHERE: Y-Def ,      19  ,     0 (       *       |              ), 0.19,  0.19,  0.19,  0.19,  0.19
+   4 ,   Naive_WHERE: Y-Def ,      31  ,     7 (              *|              ), 0.31,  0.31,  0.38,  0.38,  0.38
+   5 ,   Naive_WHERE: N-Def ,      54  ,     2 (               |     *        ), 0.54,  0.54,  0.56,  0.56,  0.57
+   6 ,    Tuned_Cart: N-Def ,      56  ,     0 (               |     *        ), 0.56,  0.56,  0.56,  0.56,  0.56
+   7 ,   Tuned_WHERE: N-Def ,      61  ,     0 (               |       *      ), 0.61,  0.61,  0.61,  0.61,  0.61
+   8 ,    Naive_Cart: N-Def ,      62  ,     0 (               |        *     ), 0.62,  0.62,  0.62,  0.62,  0.62
+   9 ,    Naive_RFst: N-Def ,      75  ,     1 (               |            -*), 0.74,  0.75,  0.76,  0.76,  0.77
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       9  ,     0 (*              |              ), 0.09,  0.09,  0.09,  0.09,  0.09
+   2 ,   Tuned_WHERE: N-Def ,      10  ,     0 (*              |              ), 0.10,  0.10,  0.10,  0.10,  0.10
+   2 ,    Naive_RFst: N-Def ,      10  ,     1 (*              |              ), 0.09,  0.10,  0.10,  0.10,  0.10
+   2 ,    Naive_Cart: N-Def ,      11  ,     0 (*              |              ), 0.11,  0.11,  0.11,  0.11,  0.11
+   2 ,    Tuned_Cart: N-Def ,      12  ,     0 (*              |              ), 0.12,  0.12,  0.12,  0.12,  0.12
+   3 ,   Naive_WHERE: Y-Def ,      94  ,     0 (               |            * ), 0.94,  0.94,  0.94,  0.94,  0.94
+   4 ,   Tuned_WHERE: Y-Def ,      96  ,     0 (               |            * ), 0.96,  0.96,  0.96,  0.96,  0.96
+   5 ,    Naive_Cart: Y-Def ,      97  ,     0 (               |             *), 0.97,  0.97,  0.97,  0.97,  0.97
+   6 ,    Tuned_Cart: Y-Def ,      98  ,     0 (               |             *), 0.98,  0.98,  0.98,  0.98,  0.98
+   6 ,    Naive_RFst: Y-Def ,      98  ,     0 (               |             *), 0.98,  0.98,  0.98,  0.98,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: N-Def ,      39  ,     1 ( -* --         |              ), 0.38,  0.39,  0.39,  0.40,  0.42
+   1 ,    Naive_RFst: Y-Def ,      39  ,     1 ( -* --         |              ), 0.38,  0.39,  0.39,  0.40,  0.42
+   2 ,    Naive_Cart: Y-Def ,      53  ,     0 (               |     *        ), 0.53,  0.53,  0.53,  0.53,  0.53
+   2 ,   Tuned_WHERE: N-Def ,      53  ,     0 (               |     *        ), 0.53,  0.53,  0.53,  0.53,  0.53
+   2 ,   Naive_WHERE: N-Def ,      53  ,     1 (               |     *        ), 0.53,  0.53,  0.53,  0.54,  0.54
+   2 ,   Tuned_WHERE: Y-Def ,      53  ,     0 (               |     *        ), 0.53,  0.53,  0.53,  0.53,  0.53
+   2 ,    Naive_Cart: N-Def ,      53  ,     0 (               |     *        ), 0.53,  0.53,  0.53,  0.53,  0.53
+   2 ,   Naive_WHERE: Y-Def ,      53  ,     1 (               |     *        ), 0.53,  0.53,  0.53,  0.54,  0.54
+   3 ,    Tuned_Cart: Y-Def ,      59  ,     0 (               |             *), 0.59,  0.59,  0.59,  0.59,  0.59
+   3 ,    Tuned_Cart: N-Def ,      59  ,     0 (               |             *), 0.59,  0.59,  0.59,  0.59,  0.59
+End time :2015-01-27 09:45:14
+
+
+
+Begin time :2015-01-27 09:45:14
+Dataset: lucene
+bestscore : 64
+infoPrune : 0.72
+threshold : 0.86
+treeMin : 4
+DTreePrune : False
+wriggle : 0.44
+depthMax : 10
+depthMin : 6
+minSize : 1
+wherePrune : True
+Evaluations : 220
+Tuned_Where Running Time: 2.14576721191e-06
+Naive_Where Running Time: 30.0848088264
+bestscore : 62
+evaluation : 90
+criterion : entropy
+splitter : best
+max_features : 0.31
+max_depth : 24
+min_samples_split : 17
+min_samples_leaf : 5
+max_leaf_nodes : 63
+Tuned_Cart Running Time: 10.2064540386
+Naive_Cart Running Time: 1.02077102661
+Naive_RFst Running Time: 1.96165513992
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      24  ,     0 (*              |              ), 0.24,  0.24,  0.24,  0.24,  0.24
+   2 ,    Naive_RFst: Y-Def ,      39  ,     1 (      -*       |              ), 0.38,  0.39,  0.39,  0.41,  0.42
+   3 ,    Naive_Cart: Y-Def ,      48  ,     0 (           *   |              ), 0.48,  0.48,  0.48,  0.48,  0.48
+   4 ,    Tuned_Cart: Y-Def ,      52  ,     0 (             * |              ), 0.52,  0.52,  0.52,  0.52,  0.52
+   5 ,   Tuned_WHERE: Y-Def ,      56  ,     0 (               *              ), 0.56,  0.56,  0.56,  0.56,  0.56
+   6 ,    Naive_Cart: N-Def ,      57  ,     0 (               |*             ), 0.58,  0.58,  0.58,  0.58,  0.58
+   7 ,   Tuned_WHERE: N-Def ,      69  ,     0 (               |      *       ), 0.69,  0.69,  0.69,  0.69,  0.69
+   8 ,    Tuned_Cart: N-Def ,      76  ,     0 (               |         *    ), 0.76,  0.76,  0.76,  0.76,  0.76
+   9 ,   Naive_WHERE: Y-Def ,      81  ,     0 (               |            * ), 0.81,  0.81,  0.81,  0.81,  0.81
+  10 ,    Naive_RFst: N-Def ,      85  ,     2 (               |             *), 0.83,  0.84,  0.85,  0.85,  0.85
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,      15  ,     1 (*              |              ), 0.15,  0.15,  0.15,  0.17,  0.18
+   2 ,   Naive_WHERE: N-Def ,      19  ,     0 ( *             |              ), 0.19,  0.19,  0.19,  0.19,  0.19
+   3 ,    Tuned_Cart: Y-Def ,      24  ,     0 (    *          |              ), 0.24,  0.24,  0.24,  0.24,  0.24
+   4 ,   Tuned_WHERE: Y-Def ,      31  ,     0 (       *       |              ), 0.31,  0.31,  0.31,  0.31,  0.31
+   5 ,    Naive_Cart: Y-Def ,      42  ,     0 (             * |              ), 0.42,  0.42,  0.42,  0.42,  0.42
+   6 ,   Tuned_WHERE: N-Def ,      44  ,     0 (              *|              ), 0.44,  0.44,  0.44,  0.44,  0.44
+   7 ,    Tuned_Cart: N-Def ,      48  ,     0 (               |*             ), 0.48,  0.48,  0.48,  0.48,  0.48
+   8 ,    Naive_Cart: N-Def ,      52  ,     0 (               |  *           ), 0.52,  0.52,  0.52,  0.52,  0.52
+   9 ,    Naive_RFst: N-Def ,      61  ,     2 (               |     -*       ), 0.58,  0.60,  0.61,  0.61,  0.62
+  10 ,   Naive_WHERE: Y-Def ,      76  ,     0 (               |             *), 0.76,  0.76,  0.76,  0.76,  0.76
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_Cart: N-Def ,      43  ,     0 (*              |              ), 0.43,  0.43,  0.43,  0.43,  0.43
+   2 ,   Naive_WHERE: N-Def ,      46  ,     0 (  *            |              ), 0.46,  0.46,  0.46,  0.46,  0.46
+   3 ,    Naive_RFst: N-Def ,      49  ,     1 (    *          |              ), 0.48,  0.48,  0.49,  0.49,  0.50
+   4 ,   Tuned_WHERE: N-Def ,      51  ,     0 (      *        |              ), 0.51,  0.51,  0.51,  0.51,  0.51
+   4 ,    Tuned_Cart: N-Def ,      51  ,     0 (      *        |              ), 0.51,  0.51,  0.51,  0.51,  0.51
+   5 ,   Naive_WHERE: Y-Def ,      61  ,     0 (              *|              ), 0.61,  0.61,  0.61,  0.61,  0.61
+   6 ,    Naive_Cart: Y-Def ,      63  ,     0 (               |*             ), 0.63,  0.63,  0.63,  0.63,  0.63
+   7 ,   Tuned_WHERE: Y-Def ,      72  ,     0 (               |       *      ), 0.72,  0.72,  0.72,  0.72,  0.72
+   8 ,    Tuned_Cart: Y-Def ,      76  ,     0 (               |          *   ), 0.76,  0.76,  0.76,  0.76,  0.76
+   9 ,    Naive_RFst: Y-Def ,      79  ,     2 (               |            -*), 0.78,  0.79,  0.79,  0.80,  0.80
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      37  ,     0 (*              |              ), 0.37,  0.37,  0.37,  0.37,  0.37
+   1 ,   Naive_WHERE: Y-Def ,      37  ,     0 (*              |              ), 0.37,  0.37,  0.37,  0.37,  0.37
+   2 ,    Naive_Cart: Y-Def ,      52  ,     0 (               | *            ), 0.52,  0.52,  0.52,  0.52,  0.52
+   2 ,    Naive_Cart: N-Def ,      52  ,     0 (               | *            ), 0.52,  0.52,  0.52,  0.52,  0.52
+   3 ,    Naive_RFst: N-Def ,      54  ,     1 (               |    *-        ), 0.53,  0.53,  0.54,  0.55,  0.56
+   3 ,    Naive_RFst: Y-Def ,      54  ,     1 (               |    *-        ), 0.53,  0.53,  0.54,  0.55,  0.56
+   4 ,   Tuned_WHERE: N-Def ,      61  ,     0 (               |            * ), 0.61,  0.61,  0.61,  0.61,  0.61
+   4 ,   Tuned_WHERE: Y-Def ,      61  ,     0 (               |            * ), 0.61,  0.61,  0.61,  0.61,  0.61
+   5 ,    Tuned_Cart: Y-Def ,      62  ,     0 (               |             *), 0.62,  0.62,  0.62,  0.62,  0.62
+   5 ,    Tuned_Cart: N-Def ,      62  ,     0 (               |             *), 0.62,  0.62,  0.62,  0.62,  0.62
+End time :2015-01-27 09:55:15
+
+
+
+Begin time :2015-01-27 09:55:15
+Dataset: mw1
+bestscore : 70
+infoPrune : 0.72
+threshold : 0.04
+treeMin : 1
+DTreePrune : True
+wriggle : 0.45
+depthMax : 9
+depthMin : 2
+minSize : 0.48
+wherePrune : True
+Evaluations : 150
+Tuned_Where Running Time: 2.14576721191e-06
+Naive_Where Running Time: 7.12317490578
+bestscore : 65
+evaluation : 60
+criterion : entropy
+splitter : best
+max_features : 0.93
+max_depth : 16
+min_samples_split : 13
+min_samples_leaf : 2
+max_leaf_nodes : 192
+Tuned_Cart Running Time: 4.54759502411
+Naive_Cart Running Time: 0.574218988419
+Naive_RFst Running Time: 1.24202394485
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: Y-Def ,      22  ,     6 (     -* -      |              ), 0.17,  0.22,  0.22,  0.28,  0.33
+   2 ,    Naive_Cart: Y-Def ,      28  ,     0 (        *      |              ), 0.28,  0.28,  0.28,  0.28,  0.28
+   3 ,    Tuned_Cart: Y-Def ,      50  ,     0 (              *|              ), 0.50,  0.50,  0.50,  0.50,  0.50
+   4 ,   Tuned_WHERE: Y-Def ,      67  ,     0 (               |    *         ), 0.67,  0.67,  0.67,  0.67,  0.67
+   5 ,   Tuned_WHERE: N-Def ,      79  ,     0 (               |       *      ), 0.79,  0.79,  0.79,  0.79,  0.79
+   6 ,    Naive_Cart: N-Def ,      89  ,     0 (               |          *   ), 0.89,  0.89,  0.89,  0.89,  0.89
+   7 ,    Tuned_Cart: N-Def ,      92  ,     0 (               |           *  ), 0.92,  0.92,  0.92,  0.92,  0.92
+   8 ,    Naive_RFst: N-Def ,      97  ,     0 (               |            -*), 0.96,  0.97,  0.97,  0.97,  0.97
+   9 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: Y-Def ,       3  ,     0 (*              |              ), 0.03,  0.03,  0.03,  0.03,  0.04
+   3 ,    Tuned_Cart: Y-Def ,       8  ,     0 (  *            |              ), 0.08,  0.08,  0.08,  0.08,  0.08
+   4 ,    Naive_Cart: Y-Def ,      11  ,     0 (   *           |              ), 0.11,  0.11,  0.11,  0.11,  0.11
+   5 ,   Tuned_WHERE: Y-Def ,      21  ,     0 (      *        |              ), 0.21,  0.21,  0.21,  0.21,  0.21
+   6 ,   Tuned_WHERE: N-Def ,      33  ,     0 (         *     |              ), 0.33,  0.33,  0.33,  0.33,  0.33
+   7 ,    Tuned_Cart: N-Def ,      50  ,     0 (              *|              ), 0.50,  0.50,  0.50,  0.50,  0.50
+   8 ,    Naive_Cart: N-Def ,      72  ,     0 (               |     *        ), 0.72,  0.72,  0.72,  0.72,  0.72
+   9 ,    Naive_RFst: N-Def ,      78  ,     6 (               |       *      ), 0.72,  0.72,  0.78,  0.78,  0.83
+  10 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_Cart: Y-Def ,      28  ,     0 (*              |              ), 0.28,  0.28,  0.28,  0.28,  0.28
+   2 ,   Tuned_WHERE: Y-Def ,      33  ,     0 (  *            |              ), 0.33,  0.33,  0.33,  0.33,  0.33
+   3 ,    Tuned_Cart: Y-Def ,      50  ,     0 (         *     |              ), 0.50,  0.50,  0.50,  0.50,  0.50
+   3 ,    Naive_RFst: Y-Def ,      50  ,    12 (       --*  -- |              ), 0.44,  0.50,  0.50,  0.56,  0.60
+   4 ,   Naive_WHERE: N-Def ,      87  ,     0 (               |          *   ), 0.87,  0.87,  0.87,  0.87,  0.87
+   4 ,   Naive_WHERE: Y-Def ,      87  ,     0 (               |          *   ), 0.87,  0.87,  0.87,  0.87,  0.87
+   5 ,    Naive_RFst: N-Def ,      89  ,     1 (               |           *  ), 0.88,  0.89,  0.89,  0.90,  0.90
+   5 ,    Naive_Cart: N-Def ,      89  ,     0 (               |           *  ), 0.89,  0.89,  0.89,  0.89,  0.89
+   6 ,    Tuned_Cart: N-Def ,      92  ,     0 (               |             *), 0.92,  0.92,  0.92,  0.92,  0.92
+   7 ,   Tuned_WHERE: N-Def ,      94  ,     0 (               |             *), 0.94,  0.94,  0.94,  0.94,  0.94
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: N-Def ,      36  ,     7 (           ---*| ---          ), 0.28,  0.36,  0.36,  0.43,  0.50
+   2 ,    Naive_RFst: Y-Def ,      36  ,     7 (           ---*| ---          ), 0.28,  0.36,  0.36,  0.43,  0.50
+   3 ,    Naive_Cart: Y-Def ,      42  ,     0 (               | *            ), 0.42,  0.42,  0.42,  0.42,  0.42
+   3 ,    Naive_Cart: N-Def ,      42  ,     0 (               | *            ), 0.42,  0.42,  0.42,  0.42,  0.42
+   4 ,    Tuned_Cart: Y-Def ,      65  ,     0 (               |           *  ), 0.65,  0.65,  0.65,  0.65,  0.65
+   4 ,    Tuned_Cart: N-Def ,      65  ,     0 (               |           *  ), 0.65,  0.65,  0.65,  0.65,  0.65
+   5 ,   Tuned_WHERE: N-Def ,      72  ,     0 (               |             *), 0.72,  0.72,  0.72,  0.72,  0.72
+   5 ,   Tuned_WHERE: Y-Def ,      72  ,     0 (               |             *), 0.72,  0.72,  0.72,  0.72,  0.72
+End time :2015-01-27 09:57:18
+
+
+
+Begin time :2015-01-27 09:57:18
+Dataset: pc1
+bestscore : 91
+infoPrune : 0.68
+threshold : 0.07
+treeMin : 3
+DTreePrune : False
+wriggle : 0.08
+depthMax : 14
+depthMin : 5
+minSize : 0.42
+wherePrune : True
+Evaluations : 30
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 74.0963401794
+bestscore : 97
+evaluation : 0
+criterion : entropy
+splitter : best
+max_features : 0.72
+max_depth : 13
+min_samples_split : 7
+min_samples_leaf : 3
+max_leaf_nodes : 591
+Tuned_Cart Running Time: 3.46068501472
+Naive_Cart Running Time: 1.97881388664
+Naive_RFst Running Time: 4.14698696136
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,   Tuned_WHERE: N-Def ,      88  ,     0 (               |          *   ), 0.88,  0.88,  0.88,  0.88,  0.88
+   2 ,    Naive_Cart: N-Def ,      88  ,     0 (               |          *   ), 0.88,  0.88,  0.88,  0.88,  0.88
+   3 ,    Naive_RFst: Y-Def ,      95  ,     1 (               |            * ), 0.95,  0.95,  0.95,  0.96,  0.96
+   3 ,    Tuned_Cart: Y-Def ,      96  ,     0 (               |            * ), 0.96,  0.96,  0.96,  0.96,  0.96
+   3 ,    Naive_RFst: N-Def ,      96  ,     0 (               |            * ), 0.96,  0.96,  0.96,  0.96,  0.96
+   4 ,    Tuned_Cart: N-Def ,      98  ,     0 (               |             *), 0.98,  0.98,  0.98,  0.98,  0.98
+   5 ,    Naive_Cart: Y-Def ,      99  ,     0 (               |             *), 0.99,  0.99,  0.99,  0.99,  0.99
+   6 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   6 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       1  ,     0 (*              |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   1 ,    Tuned_Cart: Y-Def ,       2  ,     0 (*              |              ), 0.02,  0.02,  0.02,  0.02,  0.02
+   2 ,    Tuned_Cart: N-Def ,       4  ,     0 ( *             |              ), 0.04,  0.04,  0.04,  0.04,  0.04
+   2 ,    Naive_RFst: Y-Def ,       4  ,     0 ( *             |              ), 0.04,  0.04,  0.04,  0.04,  0.06
+   2 ,    Naive_RFst: N-Def ,       5  ,     1 ( *             |              ), 0.04,  0.04,  0.05,  0.05,  0.05
+   3 ,    Naive_Cart: Y-Def ,      12  ,     0 (   *           |              ), 0.12,  0.12,  0.12,  0.12,  0.12
+   3 ,   Tuned_WHERE: Y-Def ,      12  ,     0 (   *           |              ), 0.12,  0.12,  0.12,  0.12,  0.12
+   4 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: N-Def ,      80  ,     3 (               |        *     ), 0.78,  0.80,  0.81,  0.82,  0.84
+   3 ,    Tuned_Cart: N-Def ,      83  ,     0 (               |        *     ), 0.83,  0.83,  0.83,  0.83,  0.83
+   3 ,   Naive_WHERE: Y-Def ,      83  ,     0 (               |        *     ), 0.83,  0.83,  0.83,  0.83,  0.83
+   4 ,    Naive_Cart: N-Def ,      93  ,     0 (               |           *  ), 0.93,  0.93,  0.93,  0.93,  0.93
+   5 ,    Naive_Cart: Y-Def ,      98  ,     0 (               |             *), 0.98,  0.98,  0.98,  0.98,  0.98
+   5 ,   Tuned_WHERE: Y-Def ,      98  ,     0 (               |             *), 0.98,  0.98,  0.98,  0.98,  0.98
+   6 ,    Naive_RFst: Y-Def ,      99  ,     0 (               |             *), 0.99,  0.99,  0.99,  0.99,  0.99
+   7 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   7 ,   Tuned_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_Cart: Y-Def ,      93  ,     0 (               |            * ), 0.93,  0.93,  0.93,  0.93,  0.93
+   2 ,   Tuned_WHERE: N-Def ,      93  ,     0 (               |            * ), 0.93,  0.93,  0.93,  0.93,  0.93
+   2 ,   Tuned_WHERE: Y-Def ,      93  ,     0 (               |            * ), 0.93,  0.93,  0.93,  0.93,  0.93
+   2 ,    Naive_Cart: N-Def ,      93  ,     0 (               |            * ), 0.93,  0.93,  0.93,  0.93,  0.93
+   3 ,    Naive_RFst: N-Def ,      95  ,     1 (               |             *), 0.95,  0.95,  0.96,  0.96,  0.96
+   3 ,    Naive_RFst: Y-Def ,      95  ,     1 (               |             *), 0.95,  0.95,  0.96,  0.96,  0.96
+   4 ,    Tuned_Cart: Y-Def ,      97  ,     0 (               |             *), 0.97,  0.97,  0.97,  0.97,  0.97
+   4 ,    Tuned_Cart: N-Def ,      97  ,     0 (               |             *), 0.97,  0.97,  0.97,  0.97,  0.97
+End time :2015-01-27 10:04:21
+
+
+
+Begin time :2015-01-27 10:04:21
+Dataset: pc2
+bestscore : 100
+infoPrune : 0.77
+threshold : 0.27
+treeMin : 9
+DTreePrune : True
+wriggle : 0.82
+depthMax : 5
+depthMin : 3
+minSize : 0.3
+wherePrune : True
+Evaluations : 0
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 81.6968591213
+bestscore : 100
+evaluation : 0
+criterion : entropy
+splitter : best
+max_features : 0.98
+max_depth : 7
+min_samples_split : 4
+min_samples_leaf : 11
+max_leaf_nodes : 178
+Tuned_Cart Running Time: 3.14079189301
+Naive_Cart Running Time: 1.57836484909
+Naive_RFst Running Time: 3.19211697578
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      96  ,     0 (*              |              ), 0.96,  0.96,  0.96,  0.96,  0.96
+   2 ,   Tuned_WHERE: N-Def ,      99  ,     0 (               |      *       ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Naive_RFst: N-Def ,      99  ,     0 (               |      *       ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Tuned_Cart: N-Def ,      99  ,     0 (               |      *       ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Naive_Cart: N-Def ,      99  ,     0 (               |      *       ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Naive_RFst: Y-Def ,      99  ,     0 (               |      *       ), 0.99,  0.99,  0.99,  0.99,  0.99
+   3 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Tuned_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: Y-Def ,       1  ,     0 (       *       |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   1 ,    Tuned_Cart: Y-Def ,       1  ,     0 (       *       |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   1 ,    Naive_RFst: N-Def ,       1  ,     0 (       *       |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   1 ,   Tuned_WHERE: Y-Def ,       1  ,     0 (       *       |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   1 ,    Naive_RFst: Y-Def ,       1  ,     0 (       *       |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   2 ,   Naive_WHERE: Y-Def ,       4  ,     0 (               |             *), 0.04,  0.04,  0.04,  0.04,  0.04
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,      97  ,     0 (*              |              ), 0.97,  0.97,  0.97,  0.97,  0.97
+   2 ,    Naive_Cart: Y-Def ,      99  ,     0 (               |   *          ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Tuned_Cart: Y-Def ,      99  ,     0 (               |   *          ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Naive_RFst: N-Def ,      99  ,     1 (         ------|---*          ), 0.98,  0.99,  0.99,  0.99,  0.99
+   2 ,   Tuned_WHERE: Y-Def ,      99  ,     0 (               |   *          ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Naive_RFst: Y-Def ,      99  ,     0 (               |   *          ), 0.99,  0.99,  0.99,  0.99,  0.99
+   3 ,   Tuned_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Tuned_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Naive_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      98  ,     0 (*              |              ), 0.98,  0.98,  0.98,  0.98,  0.98
+   1 ,   Naive_WHERE: Y-Def ,      98  ,     0 (*              |              ), 0.98,  0.98,  0.98,  0.98,  0.98
+   2 ,    Naive_RFst: N-Def ,      99  ,     0 (              *|              ), 0.99,  0.99,  0.99,  0.99,  0.99
+   2 ,    Naive_RFst: Y-Def ,      99  ,     0 (              *|              ), 0.99,  0.99,  0.99,  0.99,  0.99
+   3 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,   Tuned_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Tuned_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   3 ,    Naive_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+End time :2015-01-27 10:08:37
+
+
+
+Begin time :2015-01-27 10:08:37
+Dataset: pc3
+bestscore : 100
+infoPrune : 0.7
+threshold : 0.9
+treeMin : 2
+DTreePrune : False
+wriggle : 0.97
+depthMax : 6
+depthMin : 1
+minSize : 0.12
+wherePrune : False
+Evaluations : 0
+Tuned_Where Running Time: 1.19209289551e-06
+Naive_Where Running Time: 207.500602961
+bestscore : 0
+evaluation : 50
+criterion : entropy
+splitter : best
+max_features : 0.21
+max_depth : 14
+min_samples_split : 8
+min_samples_leaf : 14
+max_leaf_nodes : 524
+Tuned_Cart Running Time: 23.44099617
+Naive_Cart Running Time: 3.58419895172
+Naive_RFst Running Time: 8.08559703827
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: N-Def ,       0  ,   100 (*              |              ), 0.00,  0.00,  0.00,  1.00,  1.00
+   1 ,    Tuned_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,    Naive_RFst: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Tuned_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,    Naive_RFst: Y-Def ,     100  ,   100 (               |             *), 0.00,  0.00,  1.00,  1.00,  1.00
+   1 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: N-Def ,       0  ,   100 (*              |              ), 0.00,  0.00,  0.00,  1.00,  1.00
+   1 ,    Tuned_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,    Naive_RFst: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   1 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_Cart: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Tuned_Cart: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Tuned_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: N-Def ,       0  ,   100 (*              |              ), 0.00,  0.00,  0.00,  1.00,  1.00
+   1 ,   Tuned_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Tuned_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_Cart: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: Y-Def ,       0  ,   100 (*              |              ), 0.00,  0.00,  0.00,  1.00,  1.00
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+End time :2015-01-27 10:17:48
+
+
+
+Begin time :2015-01-27 10:17:48
+Dataset: pc4
+bestscore : 77
+infoPrune : 0.33
+threshold : 0.06
+treeMin : 5
+DTreePrune : False
+wriggle : 1
+depthMax : 6
+depthMin : 4
+minSize : 0.51
+wherePrune : False
+Evaluations : 170
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 267.727228165
+bestscore : 71
+evaluation : 130
+criterion : entropy
+splitter : best
+max_features : 0.37
+max_depth : 8
+min_samples_split : 15
+min_samples_leaf : 3
+max_leaf_nodes : 861
+Tuned_Cart Running Time: 39.8409531116
+Naive_Cart Running Time: 2.68090796471
+Naive_RFst Running Time: 3.88594603539
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: Y-Def ,      22  ,     1 (     -*        |              ), 0.19,  0.22,  0.23,  0.23,  0.24
+   3 ,    Naive_Cart: Y-Def ,      42  ,     0 (            *  |              ), 0.42,  0.42,  0.42,  0.42,  0.42
+   4 ,    Tuned_Cart: Y-Def ,      57  ,     0 (               | *            ), 0.58,  0.58,  0.58,  0.58,  0.58
+   5 ,   Tuned_WHERE: N-Def ,      70  ,     0 (               |    *         ), 0.70,  0.70,  0.70,  0.70,  0.70
+   6 ,   Tuned_WHERE: Y-Def ,      81  ,     0 (               |        *     ), 0.81,  0.81,  0.81,  0.81,  0.81
+   7 ,    Tuned_Cart: N-Def ,      92  ,     0 (               |           *  ), 0.92,  0.92,  0.92,  0.92,  0.92
+   8 ,    Naive_Cart: N-Def ,      94  ,     0 (               |            * ), 0.94,  0.94,  0.94,  0.94,  0.94
+   9 ,    Naive_RFst: N-Def ,      99  ,     0 (               |             *), 0.99,  0.99,  0.99,  0.99,  0.99
+  10 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: Y-Def ,       1  ,     0 (*              |              ), 0.01,  0.01,  0.01,  0.01,  0.02
+   2 ,    Naive_Cart: Y-Def ,       6  ,     0 ( *             |              ), 0.06,  0.06,  0.06,  0.06,  0.06
+   3 ,    Tuned_Cart: Y-Def ,       8  ,     0 (  *            |              ), 0.08,  0.08,  0.08,  0.08,  0.08
+   4 ,   Tuned_WHERE: N-Def ,      19  ,     0 (     *         |              ), 0.19,  0.19,  0.19,  0.19,  0.19
+   5 ,   Tuned_WHERE: Y-Def ,      30  ,     0 (        *      |              ), 0.30,  0.30,  0.30,  0.30,  0.30
+   6 ,    Tuned_Cart: N-Def ,      42  ,     0 (            *  |              ), 0.42,  0.42,  0.42,  0.42,  0.42
+   7 ,    Naive_Cart: N-Def ,      57  ,     0 (               | *            ), 0.58,  0.58,  0.58,  0.58,  0.58
+   8 ,    Naive_RFst: N-Def ,      77  ,     1 (               |       *      ), 0.77,  0.77,  0.78,  0.78,  0.82
+   9 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: Y-Def ,      28  ,     0 (*              |              ), 0.29,  0.29,  0.29,  0.29,  0.29
+   2 ,    Tuned_Cart: Y-Def ,      51  ,     0 (         *     |              ), 0.51,  0.51,  0.51,  0.51,  0.51
+   3 ,    Naive_Cart: Y-Def ,      52  ,     0 (          *    |              ), 0.52,  0.52,  0.52,  0.52,  0.52
+   4 ,    Naive_RFst: Y-Def ,      74  ,     4 (               | --- *        ), 0.68,  0.74,  0.77,  0.78,  0.80
+   5 ,   Naive_WHERE: N-Def ,      87  ,     0 (               |         *    ), 0.87,  0.87,  0.87,  0.87,  0.87
+   5 ,   Naive_WHERE: Y-Def ,      87  ,     0 (               |         *    ), 0.87,  0.87,  0.87,  0.87,  0.87
+   6 ,    Naive_RFst: N-Def ,      89  ,     0 (               |          *   ), 0.89,  0.89,  0.89,  0.89,  0.90
+   7 ,    Naive_Cart: N-Def ,      91  ,     0 (               |           *  ), 0.91,  0.91,  0.91,  0.91,  0.91
+   8 ,    Tuned_Cart: N-Def ,      93  ,     0 (               |            * ), 0.93,  0.93,  0.93,  0.93,  0.93
+   9 ,   Tuned_WHERE: N-Def ,      96  ,     0 (               |             *), 0.96,  0.96,  0.96,  0.96,  0.96
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: N-Def ,      36  ,     2 (            --*|              ), 0.32,  0.36,  0.37,  0.37,  0.39
+   2 ,    Naive_RFst: Y-Def ,      36  ,     2 (            --*|              ), 0.32,  0.36,  0.37,  0.37,  0.39
+   3 ,    Naive_Cart: Y-Def ,      57  ,     0 (               |       *      ), 0.58,  0.58,  0.58,  0.58,  0.58
+   3 ,    Naive_Cart: N-Def ,      57  ,     0 (               |       *      ), 0.58,  0.58,  0.58,  0.58,  0.58
+   4 ,    Tuned_Cart: Y-Def ,      71  ,     0 (               |            * ), 0.71,  0.71,  0.71,  0.71,  0.71
+   4 ,    Tuned_Cart: N-Def ,      71  ,     0 (               |            * ), 0.71,  0.71,  0.71,  0.71,  0.71
+   5 ,   Tuned_WHERE: N-Def ,      75  ,     0 (               |             *), 0.75,  0.75,  0.75,  0.75,  0.75
+   5 ,   Tuned_WHERE: Y-Def ,      75  ,     0 (               |             *), 0.75,  0.75,  0.75,  0.75,  0.75
+End time :2015-01-27 11:42:58
+
+
+
+Begin time :2015-01-27 12:26:55
+Dataset: poi
+bestscore : 69
+infoPrune : 0.71
+threshold : 0.43
+treeMin : 5
+DTreePrune : True
+wriggle : 0.85
+depthMax : 16
+depthMin : 1
+minSize : 0.93
+wherePrune : True
+Evaluations : 170
+Tuned_Where Running Time: 1.90734863281e-06
+Naive_Where Running Time: 265.166254044
+bestscore : 51
+evaluation : 200
+criterion : entropy
+splitter : best
+max_features : 0.31
+max_depth : 37
+min_samples_split : 7
+min_samples_leaf : 5
+max_leaf_nodes : 348
+Tuned_Cart Running Time: 46.4429459572
+Naive_Cart Running Time: 2.12295508385
+Naive_RFst Running Time: 4.07079792023
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,      11  ,     1 (*              |              ), 0.10,  0.11,  0.11,  0.11,  0.12
+   2 ,    Naive_Cart: Y-Def ,      28  ,     0 (      *        |              ), 0.28,  0.28,  0.28,  0.28,  0.28
+   3 ,    Tuned_Cart: Y-Def ,      35  ,     0 (        *      |              ), 0.35,  0.35,  0.35,  0.35,  0.35
+   4 ,   Tuned_WHERE: N-Def ,      45  ,     0 (           *   |              ), 0.45,  0.45,  0.45,  0.45,  0.45
+   5 ,   Naive_WHERE: Y-Def ,      54  ,     0 (              *|              ), 0.54,  0.54,  0.54,  0.54,  0.54
+   6 ,   Naive_WHERE: N-Def ,      76  ,     0 (               |      *       ), 0.76,  0.76,  0.76,  0.76,  0.76
+   7 ,   Tuned_WHERE: Y-Def ,      86  ,     0 (               |         *    ), 0.86,  0.86,  0.86,  0.86,  0.86
+   8 ,    Naive_Cart: N-Def ,      92  ,     0 (               |           *  ), 0.92,  0.92,  0.92,  0.92,  0.92
+   9 ,    Tuned_Cart: N-Def ,      93  ,     0 (               |           *  ), 0.93,  0.93,  0.93,  0.93,  0.93
+  10 ,    Naive_RFst: N-Def ,      96  ,     2 (               |            * ), 0.94,  0.96,  0.96,  0.98,  0.99
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,       4  ,     2 ( *             |              ), 0.02,  0.02,  0.04,  0.04,  0.06
+   2 ,    Tuned_Cart: Y-Def ,       7  ,     0 (  *            |              ), 0.07,  0.07,  0.07,  0.07,  0.07
+   2 ,    Naive_Cart: Y-Def ,       8  ,     0 (  *            |              ), 0.08,  0.08,  0.08,  0.08,  0.08
+   3 ,   Tuned_WHERE: N-Def ,      14  ,     0 (    *          |              ), 0.14,  0.14,  0.14,  0.14,  0.14
+   4 ,   Naive_WHERE: Y-Def ,      24  ,     0 (       *       |              ), 0.24,  0.24,  0.24,  0.24,  0.24
+   5 ,   Naive_WHERE: N-Def ,      46  ,     0 (               *              ), 0.46,  0.46,  0.46,  0.46,  0.46
+   6 ,   Tuned_WHERE: Y-Def ,      55  ,     0 (               |  *           ), 0.55,  0.55,  0.55,  0.55,  0.55
+   7 ,    Tuned_Cart: N-Def ,      65  ,     0 (               |     *        ), 0.65,  0.65,  0.65,  0.65,  0.65
+   8 ,    Naive_Cart: N-Def ,      72  ,     0 (               |       *      ), 0.72,  0.72,  0.72,  0.72,  0.72
+   9 ,    Naive_RFst: N-Def ,      89  ,     0 (               |             *), 0.88,  0.89,  0.89,  0.90,  0.90
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: N-Def ,      38  ,     1 (*              |              ), 0.38,  0.38,  0.38,  0.39,  0.39
+   1 ,    Naive_Cart: N-Def ,      42  ,     0 (  *            |              ), 0.42,  0.42,  0.42,  0.42,  0.42
+   2 ,    Tuned_Cart: N-Def ,      45  ,     0 (   *           |              ), 0.45,  0.45,  0.45,  0.45,  0.45
+   3 ,   Naive_WHERE: N-Def ,      49  ,     0 (     *         |              ), 0.49,  0.49,  0.49,  0.49,  0.49
+   4 ,   Tuned_WHERE: N-Def ,      66  ,     0 (               *              ), 0.66,  0.66,  0.66,  0.66,  0.66
+   5 ,   Tuned_WHERE: Y-Def ,      73  ,     0 (               |   *          ), 0.73,  0.73,  0.73,  0.73,  0.73
+   6 ,   Naive_WHERE: Y-Def ,      80  ,     0 (               |      *       ), 0.80,  0.80,  0.80,  0.80,  0.80
+   7 ,    Naive_RFst: Y-Def ,      84  ,     4 (               |     ----*  - ), 0.78,  0.84,  0.85,  0.91,  0.93
+   7 ,    Naive_Cart: Y-Def ,      86  ,     0 (               |          *   ), 0.86,  0.86,  0.86,  0.86,  0.86
+   8 ,    Tuned_Cart: Y-Def ,      89  ,     0 (               |           *  ), 0.89,  0.89,  0.89,  0.89,  0.89
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: N-Def ,      20  ,     1 (-*             |              ), 0.18,  0.19,  0.20,  0.20,  0.21
+   1 ,    Naive_RFst: Y-Def ,      20  ,     1 (-*             |              ), 0.18,  0.19,  0.20,  0.20,  0.21
+   2 ,    Naive_Cart: Y-Def ,      43  ,     0 (               |*             ), 0.43,  0.43,  0.43,  0.43,  0.43
+   2 ,    Naive_Cart: N-Def ,      43  ,     0 (               |*             ), 0.43,  0.43,  0.43,  0.43,  0.43
+   3 ,    Tuned_Cart: Y-Def ,      51  ,     0 (               |      *       ), 0.51,  0.51,  0.51,  0.51,  0.51
+   3 ,    Tuned_Cart: N-Def ,      51  ,     0 (               |      *       ), 0.51,  0.51,  0.51,  0.51,  0.51
+   4 ,   Tuned_WHERE: N-Def ,      59  ,     0 (               |           *  ), 0.59,  0.59,  0.59,  0.59,  0.59
+   4 ,   Tuned_WHERE: Y-Def ,      59  ,     0 (               |           *  ), 0.59,  0.59,  0.59,  0.59,  0.59
+   5 ,   Naive_WHERE: N-Def ,      63  ,     0 (               |             *), 0.63,  0.63,  0.63,  0.63,  0.63
+   5 ,   Naive_WHERE: Y-Def ,      63  ,     0 (               |             *), 0.63,  0.63,  0.63,  0.63,  0.63
+End time :2015-01-27 13:32:24
+
+
+
+Begin time :2015-01-27 13:32:24
+Dataset: synapse
+bestscore : 68
+infoPrune : 0.21
+threshold : 0.08
+treeMin : 3
+DTreePrune : True
+wriggle : 0.1
+depthMax : 19
+depthMin : 2
+minSize : 0.72
+wherePrune : True
+Evaluations : 220
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 23.7889358997
+bestscore : 43
+evaluation : 200
+criterion : entropy
+splitter : best
+max_features : 0.57
+max_depth : 26
+min_samples_split : 5
+min_samples_leaf : 12
+max_leaf_nodes : 334
+Tuned_Cart Running Time: 17.8527078629
+Naive_Cart Running Time: 0.841444015503
+Naive_RFst Running Time: 1.78478288651
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: Y-Def ,       7  ,     2 (  *            |              ), 0.07,  0.07,  0.08,  0.09,  0.09
+   3 ,    Naive_Cart: Y-Def ,      26  ,     0 (       *       |              ), 0.26,  0.26,  0.26,  0.26,  0.26
+   4 ,    Tuned_Cart: Y-Def ,      28  ,     0 (        *      |              ), 0.28,  0.28,  0.28,  0.28,  0.28
+   5 ,   Tuned_WHERE: Y-Def ,      63  ,     0 (               |  *           ), 0.63,  0.63,  0.63,  0.63,  0.63
+   6 ,   Tuned_WHERE: N-Def ,      82  ,     0 (               |        *     ), 0.82,  0.82,  0.82,  0.82,  0.82
+   7 ,    Naive_Cart: N-Def ,      94  ,     0 (               |            * ), 0.94,  0.94,  0.94,  0.94,  0.94
+   8 ,    Tuned_Cart: N-Def ,      96  ,     0 (               |            * ), 0.96,  0.96,  0.96,  0.96,  0.96
+   9 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   9 ,    Naive_RFst: N-Def ,     100  ,     1 (               |             *), 0.99,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.01,  0.01
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Tuned_Cart: Y-Def ,       4  ,     0 ( *             |              ), 0.04,  0.04,  0.04,  0.04,  0.04
+   3 ,    Naive_Cart: Y-Def ,       6  ,     0 ( *             |              ), 0.06,  0.06,  0.06,  0.06,  0.06
+   4 ,   Tuned_WHERE: Y-Def ,      18  ,     0 (     *         |              ), 0.18,  0.18,  0.18,  0.18,  0.18
+   5 ,   Tuned_WHERE: N-Def ,      37  ,     0 (           *   |              ), 0.37,  0.37,  0.37,  0.37,  0.37
+   6 ,    Tuned_Cart: N-Def ,      72  ,     0 (               |     *        ), 0.72,  0.72,  0.72,  0.72,  0.72
+   7 ,    Naive_Cart: N-Def ,      74  ,     0 (               |      *       ), 0.74,  0.74,  0.74,  0.74,  0.74
+   8 ,    Naive_RFst: N-Def ,      92  ,     2 (               |           *  ), 0.91,  0.91,  0.93,  0.93,  0.94
+   9 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: Y-Def ,      64  ,     0 (*              |              ), 0.64,  0.64,  0.64,  0.64,  0.64
+   2 ,   Naive_WHERE: N-Def ,      66  ,     0 ( *             |              ), 0.66,  0.66,  0.66,  0.66,  0.66
+   2 ,   Naive_WHERE: Y-Def ,      66  ,     0 ( *             |              ), 0.66,  0.66,  0.66,  0.66,  0.66
+   3 ,    Naive_Cart: Y-Def ,      67  ,     0 (  *            |              ), 0.67,  0.67,  0.67,  0.67,  0.67
+   4 ,    Naive_RFst: N-Def ,      68  ,     0 (   *           |              ), 0.68,  0.68,  0.68,  0.69,  0.69
+   5 ,    Naive_Cart: N-Def ,      71  ,     0 (     *         |              ), 0.71,  0.71,  0.71,  0.71,  0.71
+   6 ,    Tuned_Cart: N-Def ,      73  ,     0 (       *       |              ), 0.73,  0.73,  0.73,  0.73,  0.73
+   7 ,    Tuned_Cart: Y-Def ,      80  ,     0 (             * |              ), 0.80,  0.80,  0.80,  0.80,  0.80
+   7 ,   Tuned_WHERE: N-Def ,      81  ,     0 (              *|              ), 0.81,  0.81,  0.81,  0.81,  0.81
+   7 ,    Naive_RFst: Y-Def ,     100  ,    14 (             --|-------------*), 0.80,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: N-Def ,      13  ,     4 (      *        |              ), 0.13,  0.13,  0.15,  0.17,  0.17
+   2 ,    Naive_RFst: Y-Def ,      13  ,     4 (      *        |              ), 0.13,  0.13,  0.15,  0.17,  0.17
+   3 ,    Naive_Cart: Y-Def ,      40  ,     0 (               |*             ), 0.40,  0.40,  0.40,  0.40,  0.40
+   3 ,    Naive_Cart: N-Def ,      40  ,     0 (               |*             ), 0.40,  0.40,  0.40,  0.40,  0.40
+   4 ,    Tuned_Cart: Y-Def ,      43  ,     0 (               |  *           ), 0.43,  0.43,  0.43,  0.43,  0.43
+   4 ,    Tuned_Cart: N-Def ,      43  ,     0 (               |  *           ), 0.43,  0.43,  0.43,  0.43,  0.43
+   5 ,   Tuned_WHERE: N-Def ,      71  ,     0 (               |             *), 0.71,  0.71,  0.71,  0.71,  0.71
+   5 ,   Tuned_WHERE: Y-Def ,      71  ,     0 (               |             *), 0.71,  0.71,  0.71,  0.71,  0.71
+End time :2015-01-27 13:40:15
+
+
+
+Begin time :2015-01-27 13:40:15
+Dataset: velocity
+bestscore : 69
+infoPrune : 0.79
+threshold : 1
+treeMin : 2
+DTreePrune : False
+wriggle : 0.63
+depthMax : 1
+depthMin : 3
+minSize : 0.94
+wherePrune : False
+Evaluations : 270
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 34.6054990292
+bestscore : 39
+evaluation : 140
+criterion : entropy
+splitter : best
+max_features : 0.44
+max_depth : 25
+min_samples_split : 17
+min_samples_leaf : 4
+max_leaf_nodes : 683
+Tuned_Cart Running Time: 13.2322230339
+Naive_Cart Running Time: 0.837646961212
+Naive_RFst Running Time: 1.92039203644
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       1  ,     0 (*              |              ), 0.01,  0.01,  0.01,  0.01,  0.01
+   2 ,    Naive_RFst: N-Def ,       9  ,     2 (  *            |              ), 0.08,  0.09,  0.10,  0.10,  0.11
+   3 ,    Naive_Cart: N-Def ,      15  ,     0 (    *          |              ), 0.15,  0.15,  0.15,  0.15,  0.15
+   4 ,    Tuned_Cart: N-Def ,      25  ,     0 (       *       |              ), 0.25,  0.25,  0.25,  0.25,  0.25
+   5 ,   Tuned_WHERE: N-Def ,      43  ,     0 (            *  |              ), 0.43,  0.43,  0.43,  0.43,  0.44
+   6 ,   Tuned_WHERE: Y-Def ,      68  ,     0 (               |    *         ), 0.68,  0.68,  0.68,  0.68,  0.68
+   7 ,    Tuned_Cart: Y-Def ,      83  ,     0 (               |        *     ), 0.83,  0.83,  0.83,  0.83,  0.83
+   8 ,    Naive_Cart: Y-Def ,      87  ,     0 (               |          *   ), 0.87,  0.87,  0.87,  0.87,  0.87
+   9 ,    Naive_RFst: Y-Def ,      88  ,     0 (               |          *   ), 0.87,  0.88,  0.88,  0.88,  0.90
+  10 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Naive_RFst: N-Def ,      12  ,     0 (   *           |              ), 0.12,  0.12,  0.12,  0.12,  0.13
+   3 ,    Naive_Cart: N-Def ,      13  ,     0 (   *           |              ), 0.13,  0.13,  0.13,  0.13,  0.13
+   4 ,    Tuned_Cart: N-Def ,      17  ,     0 (     *         |              ), 0.17,  0.17,  0.17,  0.17,  0.17
+   5 ,   Tuned_WHERE: N-Def ,      32  ,     0 (         *     |              ), 0.32,  0.32,  0.32,  0.32,  0.33
+   6 ,   Tuned_WHERE: Y-Def ,      56  ,     0 (               | *            ), 0.57,  0.57,  0.57,  0.57,  0.57
+   7 ,    Tuned_Cart: Y-Def ,      75  ,     0 (               |      *       ), 0.75,  0.75,  0.75,  0.75,  0.75
+   8 ,    Naive_Cart: Y-Def ,      85  ,     0 (               |         *    ), 0.85,  0.85,  0.85,  0.85,  0.85
+   9 ,    Naive_RFst: Y-Def ,      90  ,     1 (               |           *  ), 0.90,  0.90,  0.91,  0.92,  0.93
+  10 ,   Naive_WHERE: Y-Def ,      99  ,     0 (               |             *), 0.99,  0.99,  0.99,  0.99,  0.99
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,      33  ,     1 (*              |              ), 0.33,  0.33,  0.33,  0.34,  0.34
+   2 ,   Naive_WHERE: Y-Def ,      34  ,     0 (*              |              ), 0.34,  0.34,  0.34,  0.34,  0.34
+   2 ,    Naive_Cart: Y-Def ,      35  ,     0 (*              |              ), 0.35,  0.35,  0.35,  0.35,  0.35
+   3 ,    Tuned_Cart: Y-Def ,      37  ,     0 ( *             |              ), 0.37,  0.37,  0.37,  0.37,  0.37
+   4 ,   Tuned_WHERE: Y-Def ,      38  ,     0 (  *            |              ), 0.38,  0.38,  0.38,  0.38,  0.38
+   5 ,    Naive_RFst: N-Def ,      60  ,     6 (          --*  |              ), 0.57,  0.60,  0.61,  0.63,  0.64
+   6 ,    Naive_Cart: N-Def ,      69  ,     0 (               |*             ), 0.69,  0.69,  0.69,  0.69,  0.69
+   7 ,   Tuned_WHERE: N-Def ,      72  ,     0 (               | *            ), 0.72,  0.72,  0.72,  0.72,  0.72
+   8 ,    Tuned_Cart: N-Def ,      75  ,     0 (               |  *           ), 0.75,  0.75,  0.75,  0.75,  0.75
+   9 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,       3  ,     0 (*              |              ), 0.03,  0.03,  0.03,  0.03,  0.03
+   1 ,   Naive_WHERE: Y-Def ,       3  ,     0 (*              |              ), 0.03,  0.03,  0.03,  0.03,  0.03
+   2 ,    Naive_RFst: N-Def ,      17  ,     3 (        *      |              ), 0.15,  0.16,  0.18,  0.18,  0.19
+   2 ,    Naive_RFst: Y-Def ,      17  ,     3 (        *      |              ), 0.15,  0.16,  0.18,  0.18,  0.19
+   3 ,    Naive_Cart: Y-Def ,      25  ,     0 (             * |              ), 0.25,  0.25,  0.25,  0.25,  0.25
+   3 ,    Naive_Cart: N-Def ,      25  ,     0 (             * |              ), 0.25,  0.25,  0.25,  0.25,  0.25
+   4 ,    Tuned_Cart: Y-Def ,      39  ,     0 (               |     *        ), 0.39,  0.39,  0.39,  0.39,  0.39
+   4 ,    Tuned_Cart: N-Def ,      39  ,     0 (               |     *        ), 0.39,  0.39,  0.39,  0.39,  0.39
+   5 ,   Tuned_WHERE: N-Def ,      53  ,     0 (               |             *), 0.53,  0.53,  0.53,  0.53,  0.53
+   5 ,   Tuned_WHERE: Y-Def ,      53  ,     0 (               |             *), 0.53,  0.53,  0.53,  0.53,  0.53
+End time :2015-01-27 13:53:51
+
+
+
+Begin time :2015-01-27 13:53:51
+Dataset: xalan
+bestscore : 69
+infoPrune : 0.53
+threshold : 0.35
+treeMin : 9
+DTreePrune : False
+wriggle : 0.07
+depthMax : 14
+depthMin : 2
+minSize : 1
+wherePrune : False
+Evaluations : 320
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 1447.98790908
+bestscore : 56
+evaluation : 210
+criterion : entropy
+splitter : best
+max_features : 0.95
+max_depth : 32
+min_samples_split : 2
+min_samples_leaf : 1
+max_leaf_nodes : 441
+Tuned_Cart Running Time: 87.6870291233
+Naive_Cart Running Time: 3.70474910736
+Naive_RFst Running Time: 7.11080098152
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: Y-Def ,      25  ,     0 (*              |              ), 0.25,  0.25,  0.25,  0.26,  0.26
+   2 ,    Naive_RFst: Y-Def ,      31  ,     2 (  *            |              ), 0.29,  0.30,  0.31,  0.32,  0.35
+   2 ,   Tuned_WHERE: Y-Def ,      33  ,     0 (   *           |              ), 0.33,  0.33,  0.33,  0.33,  0.33
+   3 ,    Naive_Cart: Y-Def ,      36  ,     0 (    *          |              ), 0.36,  0.36,  0.36,  0.36,  0.36
+   4 ,    Tuned_Cart: Y-Def ,      40  ,     0 (     *         |              ), 0.40,  0.40,  0.40,  0.40,  0.40
+   5 ,    Tuned_Cart: N-Def ,      91  ,     0 (               |          *   ), 0.91,  0.91,  0.91,  0.91,  0.91
+   6 ,   Tuned_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   6 ,   Naive_WHERE: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   6 ,    Naive_RFst: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   6 ,    Naive_Cart: N-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_Cart: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Tuned_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,    Naive_RFst: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   1 ,   Naive_WHERE: Y-Def ,       0  ,     0 (*              |              ), 0.00,  0.00,  0.00,  0.00,  0.00
+   2 ,    Tuned_Cart: Y-Def ,       9  ,     0 (   *           |              ), 0.09,  0.09,  0.09,  0.09,  0.09
+   3 ,    Tuned_Cart: N-Def ,      60  ,     0 (               |       *      ), 0.60,  0.60,  0.60,  0.60,  0.60
+   4 ,    Naive_Cart: N-Def ,      64  ,     0 (               |         *    ), 0.64,  0.64,  0.64,  0.64,  0.64
+   5 ,   Tuned_WHERE: N-Def ,      67  ,     0 (               |          *   ), 0.67,  0.67,  0.67,  0.67,  0.67
+   5 ,    Naive_RFst: N-Def ,      69  ,     2 (               |         --*  ), 0.65,  0.68,  0.69,  0.70,  0.71
+   6 ,   Naive_WHERE: N-Def ,      75  ,     1 (               |             *), 0.74,  0.75,  0.75,  0.75,  0.75
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Tuned_WHERE: N-Def ,       2  ,     0 (*              |              ), 0.02,  0.02,  0.02,  0.02,  0.02
+   1 ,   Naive_WHERE: N-Def ,       2  ,     0 (*              |              ), 0.02,  0.02,  0.02,  0.02,  0.02
+   1 ,    Naive_RFst: N-Def ,       2  ,     0 (*              |              ), 0.02,  0.02,  0.02,  0.02,  0.02
+   1 ,    Tuned_Cart: N-Def ,       2  ,     0 (*              |              ), 0.02,  0.02,  0.02,  0.02,  0.02
+   1 ,    Naive_Cart: N-Def ,       2  ,     0 (*              |              ), 0.02,  0.02,  0.02,  0.02,  0.02
+   2 ,    Naive_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   2 ,    Tuned_Cart: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   2 ,   Tuned_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   2 ,    Naive_RFst: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+   2 ,   Naive_WHERE: Y-Def ,     100  ,     0 (               |             *), 1.00,  1.00,  1.00,  1.00,  1.00
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      40  ,     0 (*              |              ), 0.40,  0.40,  0.40,  0.41,  0.41
+   1 ,   Naive_WHERE: Y-Def ,      40  ,     0 (*              |              ), 0.40,  0.40,  0.40,  0.41,  0.41
+   2 ,    Naive_RFst: N-Def ,      47  ,     2 (         --   *|------        ), 0.45,  0.46,  0.48,  0.48,  0.52
+   2 ,    Naive_RFst: Y-Def ,      47  ,     2 (         --   *|------        ), 0.45,  0.46,  0.48,  0.48,  0.52
+   3 ,   Tuned_WHERE: N-Def ,      50  ,     0 (               |  *           ), 0.50,  0.50,  0.50,  0.50,  0.50
+   3 ,   Tuned_WHERE: Y-Def ,      50  ,     0 (               |  *           ), 0.50,  0.50,  0.50,  0.50,  0.50
+   4 ,    Naive_Cart: Y-Def ,      53  ,     0 (               |        *     ), 0.53,  0.53,  0.53,  0.53,  0.53
+   4 ,    Naive_Cart: N-Def ,      53  ,     0 (               |        *     ), 0.53,  0.53,  0.53,  0.53,  0.53
+   5 ,    Tuned_Cart: Y-Def ,      56  ,     0 (               |             *), 0.56,  0.56,  0.56,  0.56,  0.56
+   5 ,    Tuned_Cart: N-Def ,      56  ,     0 (               |             *), 0.56,  0.56,  0.56,  0.56,  0.56
+End time :2015-01-28 03:59:15
+
+
+
+Begin time :2015-01-28 03:59:15
+Dataset: xerces
+bestscore : 59
+infoPrune : 0.88
+threshold : 0.62
+treeMin : 8
+DTreePrune : True
+wriggle : 0.11
+depthMax : 1
+depthMin : 5
+minSize : 0.41
+wherePrune : False
+Evaluations : 160
+Tuned_Where Running Time: 9.53674316406e-07
+Naive_Where Running Time: 236.367791891
+bestscore : 30
+evaluation : 180
+criterion : entropy
+splitter : best
+max_features : 0.37
+max_depth : 20
+min_samples_split : 3
+min_samples_leaf : 1
+max_leaf_nodes : 827
+Tuned_Cart Running Time: 39.1546661854
+Naive_Cart Running Time: 1.77933692932
+Naive_RFst Running Time: 3.09429097176
+
+**********pd**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,       5  ,     0 (*              |              ), 0.05,  0.05,  0.05,  0.06,  0.06
+   2 ,    Naive_Cart: Y-Def ,      17  ,     0 (     *         |              ), 0.17,  0.17,  0.17,  0.17,  0.17
+   3 ,    Tuned_Cart: Y-Def ,      19  ,     0 (     *         |              ), 0.19,  0.19,  0.19,  0.19,  0.19
+   4 ,   Naive_WHERE: Y-Def ,      26  ,     0 (        *      |              ), 0.26,  0.26,  0.26,  0.26,  0.26
+   5 ,   Tuned_WHERE: Y-Def ,      39  ,     0 (              *|              ), 0.39,  0.39,  0.39,  0.39,  0.39
+   6 ,   Naive_WHERE: N-Def ,      57  ,     0 (               |      *       ), 0.58,  0.58,  0.58,  0.58,  0.58
+   7 ,   Tuned_WHERE: N-Def ,      64  ,     0 (               |         *    ), 0.64,  0.64,  0.64,  0.64,  0.64
+   8 ,    Tuned_Cart: N-Def ,      68  ,     0 (               |          *   ), 0.68,  0.68,  0.68,  0.68,  0.68
+   8 ,    Naive_Cart: N-Def ,      69  ,     0 (               |           *  ), 0.69,  0.69,  0.69,  0.69,  0.69
+   9 ,    Naive_RFst: N-Def ,      74  ,     2 (               |            -*), 0.72,  0.73,  0.74,  0.74,  0.75
+
+**********pf**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: Y-Def ,      26  ,     1 (*              |              ), 0.26,  0.26,  0.26,  0.28,  0.28
+   2 ,    Naive_Cart: Y-Def ,      31  ,     0 (  *            |              ), 0.31,  0.31,  0.31,  0.31,  0.31
+   3 ,    Tuned_Cart: Y-Def ,      32  ,     0 (  *            |              ), 0.32,  0.32,  0.32,  0.32,  0.32
+   4 ,   Tuned_WHERE: Y-Def ,      36  ,     0 (    *          |              ), 0.36,  0.36,  0.36,  0.36,  0.36
+   5 ,   Naive_WHERE: Y-Def ,      42  ,     0 (       *       |              ), 0.42,  0.42,  0.42,  0.42,  0.42
+   6 ,   Tuned_WHERE: N-Def ,      61  ,     0 (               *              ), 0.61,  0.61,  0.61,  0.61,  0.61
+   7 ,   Naive_WHERE: N-Def ,      74  ,     0 (               |    *         ), 0.74,  0.74,  0.74,  0.74,  0.74
+   8 ,    Tuned_Cart: N-Def ,      81  ,     0 (               |       *      ), 0.81,  0.81,  0.81,  0.81,  0.81
+   9 ,    Naive_Cart: N-Def ,      83  ,     0 (               |        *     ), 0.83,  0.83,  0.83,  0.83,  0.83
+  10 ,    Naive_RFst: N-Def ,      95  ,     1 (               |             *), 0.94,  0.95,  0.95,  0.95,  0.95
+
+**********prec**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,   Naive_WHERE: N-Def ,      21  ,     0 (*              |              ), 0.21,  0.21,  0.21,  0.21,  0.21
+   1 ,    Naive_RFst: N-Def ,      21  ,     0 (*              |              ), 0.21,  0.21,  0.21,  0.21,  0.22
+   2 ,    Naive_Cart: N-Def ,      22  ,     0 (*              |              ), 0.22,  0.22,  0.22,  0.22,  0.22
+   3 ,    Tuned_Cart: N-Def ,      23  ,     0 ( *             |              ), 0.23,  0.23,  0.23,  0.23,  0.23
+   4 ,   Tuned_WHERE: N-Def ,      26  ,     0 (  *            |              ), 0.26,  0.26,  0.26,  0.26,  0.26
+   5 ,    Naive_RFst: Y-Def ,      35  ,     2 (        *-     |              ), 0.34,  0.35,  0.37,  0.38,  0.40
+   6 ,    Naive_Cart: Y-Def ,      61  ,     0 (               |     *        ), 0.61,  0.61,  0.61,  0.61,  0.61
+   7 ,    Tuned_Cart: Y-Def ,      64  ,     0 (               |       *      ), 0.64,  0.64,  0.64,  0.64,  0.64
+   7 ,   Naive_WHERE: Y-Def ,      64  ,     0 (               |       *      ), 0.64,  0.64,  0.64,  0.64,  0.64
+   8 ,   Tuned_WHERE: Y-Def ,      76  ,     0 (               |             *), 0.76,  0.76,  0.76,  0.76,  0.76
+
+**********g**********
+rank ,                 name ,    med   ,  iqr 
+----------------------------------------------------
+   1 ,    Naive_RFst: N-Def ,      10  ,     1 (*              |              ), 0.09,  0.09,  0.10,  0.11,  0.11
+   1 ,    Naive_RFst: Y-Def ,      10  ,     1 (*              |              ), 0.09,  0.09,  0.10,  0.11,  0.11
+   2 ,    Naive_Cart: Y-Def ,      27  ,     0 (             * |              ), 0.27,  0.27,  0.27,  0.27,  0.27
+   2 ,    Naive_Cart: N-Def ,      27  ,     0 (             * |              ), 0.27,  0.27,  0.27,  0.27,  0.27
+   3 ,    Tuned_Cart: Y-Def ,      30  ,     0 (               |*             ), 0.30,  0.30,  0.30,  0.30,  0.30
+   3 ,    Tuned_Cart: N-Def ,      30  ,     0 (               |*             ), 0.30,  0.30,  0.30,  0.30,  0.30
+   4 ,   Naive_WHERE: N-Def ,      36  ,     0 (               |    *         ), 0.36,  0.36,  0.36,  0.36,  0.36
+   4 ,   Naive_WHERE: Y-Def ,      36  ,     0 (               |    *         ), 0.36,  0.36,  0.36,  0.36,  0.36
+   5 ,   Tuned_WHERE: N-Def ,      48  ,     0 (               |             *), 0.48,  0.48,  0.48,  0.48,  0.48
+   5 ,   Tuned_WHERE: Y-Def ,      48  ,     0 (               |             *), 0.48,  0.48,  0.48,  0.48,  0.48
+End time :2015-01-28 04:59:51
+
+
+
+

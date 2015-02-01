@@ -1,0 +1,14 @@
+set terminal png
+set key horizontal
+set output "evaluation.png"
+set title "Number of evaluation"
+set xlabel "Models"
+set ylabel "Evaluations"
+set boxwidth 0.15
+set logscale y 10
+set xrange [-0.5:7]
+#set yrange [-6:3]
+plot 'evaluation.dat' using ($0-.30):4:5:xtic(1) with boxerrorbars title col, \
+'' using ($0-0.15):2:3 with boxerrorbars title col,\
+'' using ($0):6:7 with boxerrorbars title col,\
+'' using ($0+0.15):8:9 with boxerrorbars title col

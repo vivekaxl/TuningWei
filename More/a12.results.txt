@@ -1,0 +1,105 @@
+0.96
+0.86
+
+1.0
+1.0
+
+DTLZ6
+score: 
+DE,s4:  0.98
+moead,s4:  0.61
+
+# of Evaluation:  	
+DE,s4:  0.8
+moead,s4:  1.0
+
+DTLZ5
+score: 
+DE,s4:  0.0
+moead,s4:  0.61
+
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+DTLZ1
+score: 
+DE,s4:  0.0
+moead,s4:  0.2
+
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+fonseca
+score: 
+DE,s4:  0.0
+moead,s4:  0.22
+
+# of Evaluation:  	
+DE,s4:  0.7
+moead,s4:  1.0
+
+fonseca
+score: 
+DE,s4:  1.0
+moead,s4:  0.18
+
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+ZDT1
+score: 
+DE,s4:  1.0
+moead,s4:  0.56
+
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+ZDT3
+score: 
+DE,s4:  1.0
+moead,s4:  0.88
+
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+ZDT3
+score: 
+DE,s4:  1.0
+moead,s4:  0.83
+
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+Schwefel
+score: 
+DE,s4:  0.99
+moead,s4:  0.12
+
+# of Evaluation:  	
+DE,s4:  0.9
+moead,s4:  1.0
+
+XOMO
+score: 
+DE,s4:  0.0
+moead,s4:  0.13
+
+# of Evaluation:  	
+DE,s4:  1.0
+moead,s4:  1.0
+
+POM3
+score: 
+DE,s4:  0.27
+moead,s4:  0.175
+
+# of Evaluation:  	
+DE,s4:  0.8
+moead,s4:  1.0
+
