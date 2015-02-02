@@ -1,0 +1,332 @@
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/ant/ant-1.3.csv', './defectprediction/data/ant/ant-1.4.csv', './defectprediction/data/ant/ant-1.5.csv']
+Predict:  ./defectprediction/data/ant/ant-1.6.csv
+Test:  ./defectprediction/data/ant/ant-1.7.csv
+Start Time:  1422864720.58
+Seive2_Initial . in middle of desert
+in middle of desert
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.4420653343068359, 1.7235459351749458, 4.699440505735248, 10.430804731092927, 99.47891737803961]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+
+Time for Experiment:  12.7129309177
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/ant/ant-1.3.csv', './defectprediction/data/ant/ant-1.4.csv', './defectprediction/data/ant/ant-1.5.csv']
+Predict:  ./defectprediction/data/ant/ant-1.6.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f6991b8>
+Start Time:  1422864733.29
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   62   61  104  518   78  89  63  83  86  53 Non-Defective
+# Traing     Testing     166  518  104   61   62   78  37  11  50  43  53 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  53
+Time for Experiment:  0.0290069580078
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/camel/camel-1.0.csv', './defectprediction/data/camel/camel-1.2.csv']
+Predict:  ./defectprediction/data/camel/camel-1.4.csv
+Test:  ./defectprediction/data/camel/camel-1.6.csv
+Start Time:  1422864733.32
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.7156070372587061, 16.43545173454399, 11.41079870005227, 5.2105309386007, 20.06873569439367]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     777   33   64  155  713   77  92  82  82  87  29 Non-Defective
+# Traing     Testing     188  713  155   64   33   77  18   8  34  23  29 Defective 
+
+Time for Experiment:  14.014537096
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/camel/camel-1.0.csv', './defectprediction/data/camel/camel-1.2.csv']
+Predict:  ./defectprediction/data/camel/camel-1.4.csv
+Test:  <searchers.Seive2_Initial instance at 0x10e33d8c0>
+Start Time:  1422864747.34
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     777   70  222  118  555   65  71  63  82  77  49 Non-Defective
+# Traing     Testing     188  555  118  222   70   65  37  29  24  29  49 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  49
+Time for Experiment:  0.0414628982544
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/ivy/ivy-1.1.csv']
+Predict:  ./defectprediction/data/ivy/ivy-1.4.csv
+Test:  ./defectprediction/data/ivy/ivy-2.0.csv
+Start Time:  1422864747.38
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.010973399239292185, 15.887531418044041, 9.408871482580011, 17.48023740863975, 34.49196358676183]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     312   20   49   20  263   80  84  50  93  88  63 Non-Defective
+# Traing     Testing      40  263   20   49   20   80  50  16  29  37  63 Defective 
+
+Time for Experiment:  9.382335186
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/ivy/ivy-1.1.csv']
+Predict:  ./defectprediction/data/ivy/ivy-1.4.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f71aef0>
+Start Time:  1422864756.76
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     312   33  170    7  142   50  46  18  95  62  59 Non-Defective
+# Traing     Testing      40  142    7  170   33   50  83  54  16  27  59 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  59
+Time for Experiment:  0.00844502449036
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/jedit/jedit-3.2.csv', './defectprediction/data/jedit/jedit-4.0.csv', './defectprediction/data/jedit/jedit-4.1.csv']
+Predict:  ./defectprediction/data/jedit/jedit-4.2.csv
+Test:  ./defectprediction/data/jedit/jedit-4.3.csv
+Start Time:  1422864756.77
+Seive2_Initial . in middle of desert
+in middle of desert
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.19995557336018688, 48.45473596485722, 8.581183501149875, 7.713216181945043, 30.736839723781255]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     481    6   83    5  398   82  83  45  99  90  66 Non-Defective
+# Traing     Testing      11  398    5   83    6   82  55  17   7  12  66 Defective 
+
+Time for Experiment:  38.5194149017
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/jedit/jedit-3.2.csv', './defectprediction/data/jedit/jedit-4.0.csv', './defectprediction/data/jedit/jedit-4.1.csv']
+Predict:  ./defectprediction/data/jedit/jedit-4.2.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f6858c0>
+Start Time:  1422864795.29
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     481   10  174    1  307   64  64   9 100  78  75 Non-Defective
+# Traing     Testing      11  307    1  174   10   64  91  36   5  10  75 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  75
+Time for Experiment:  0.0287261009216
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/log4j/log4j-1.0.csv']
+Predict:  ./defectprediction/data/log4j/log4j-1.1.csv
+Test:  ./defectprediction/data/log4j/log4j-1.2.csv
+Start Time:  1422864795.32
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.3604970615610082, 44.04004453004607, 12.797674612954129, 5.072475939333294, 27.4975358089769]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing      16   50    2  139   14   31  88  74   9  17  41 Non-Defective
+# Traing     Testing     189   14  139    2   50   31  26  13  96  41  41 Defective 
+
+Time for Experiment:  8.82869195938
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/log4j/log4j-1.0.csv']
+Predict:  ./defectprediction/data/log4j/log4j-1.1.csv
+Test:  <searchers.Seive2_Initial instance at 0x10e353ea8>
+Start Time:  1422864804.15
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing      16   71    2  118   14   41  88  62  11  19  53 Non-Defective
+# Traing     Testing     189   14  118    2   71   41  38  13  97  54  53 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  53
+Time for Experiment:  0.00716114044189
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/lucene/lucene-2.0.csv']
+Predict:  ./defectprediction/data/lucene/lucene-2.2.csv
+Test:  ./defectprediction/data/lucene/lucene-2.4.csv
+Start Time:  1422864804.15
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.5481343010548552, 42.53396524480901, 2.1313542780723895, 17.57596162097226, 31.149918640696853]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     137   86   31  117  106   56  77  58  48  59  55 Non-Defective
+# Traing     Testing     203  106  117   31   86   56  42  23  74  54  55 Defective 
+
+Time for Experiment:  10.2481529713
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/lucene/lucene-2.0.csv']
+Predict:  ./defectprediction/data/lucene/lucene-2.2.csv
+Test:  <searchers.Seive2_Initial instance at 0x10e32cc68>
+Start Time:  1422864814.4
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     137   89   41  114   96   54  70  56  46  55  54 Non-Defective
+# Traing     Testing     203   96  114   41   89   54  44  30  68  53  54 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  54
+Time for Experiment:  0.0103230476379
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/mw1/mw1.1.csv']
+Predict:  ./defectprediction/data/mw1/mw1.2.csv
+Test:  ./defectprediction/data/mw1/mw1.3.csv
+Start Time:  1422864814.41
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6]
+Maxi:  6
+Tuned Parameters:  [0.8854292920363, 45.44215390899537, 14.671569335197018, 1.8033381146564216, 61.287023049361345]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     116   10    9    8  107   87  92  44  93  93  69 Non-Defective
+# Traing     Testing      18  107    8    9   10   87  56   8  53  54  69 Defective 
+
+Time for Experiment:  8.11952710152
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/mw1/mw1.1.csv']
+Predict:  ./defectprediction/data/mw1/mw1.2.csv
+Test:  <searchers.Seive2_Initial instance at 0x10e33f4d0>
+Start Time:  1422864822.53
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     116    6    8   12  108   85  93  67  90  92  49 Non-Defective
+# Traing     Testing      18  108   12    8    6   85  33   7  43  38  49 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  49
+Time for Experiment:  0.0065541267395
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/poi/poi-1.5.csv', './defectprediction/data/poi/poi-2.0.csv']
+Predict:  ./defectprediction/data/poi/poi-2.5.csv
+Test:  ./defectprediction/data/poi/poi-3.0.csv
+Start Time:  1422864822.54
+Seive2_Initial . in middle of desert
+in middle of desert
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.15922192331575127, 36.44275366336475, 14.105080011084937, 11.220304656016111, 91.78078582515703]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     161   48    6  233  155   46  96  83  40  56  29 Non-Defective
+# Traing     Testing     281  155  233    6   48   46  17   4  89  29  29 Defective 
+
+Time for Experiment:  12.8290779591
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/poi/poi-1.5.csv', './defectprediction/data/poi/poi-2.0.csv']
+Predict:  ./defectprediction/data/poi/poi-2.5.csv
+Test:  <searchers.Seive2_Initial instance at 0x10e52b248>
+Start Time:  1422864835.37
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     161   86   10  195  151   54  94  69  44  60  46 Non-Defective
+# Traing     Testing     281  151  195   10   86   54  31   6  90  46  46 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  46
+Time for Experiment:  0.0245110988617
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/synapse/synapse-1.0.csv']
+Predict:  ./defectprediction/data/synapse/synapse-1.1.csv
+Test:  ./defectprediction/data/synapse/synapse-1.2.csv
+Start Time:  1422864835.39
+Seive2_Initial . [0, 1, 2, 3, 4]
+Maxi:  4
+Tuned Parameters:  [0.3483998162818528, 23.04048111606721, 14.355788737760498, 3.1579055917974195, 71.81236551837698]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     170   16    5   70  165   71  97  81  70  81  31 Non-Defective
+# Traing     Testing      86  165   70    5   16   71  19   3  76  30  31 Defective 
+
+Time for Experiment:  9.59616303444
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/synapse/synapse-1.0.csv']
+Predict:  ./defectprediction/data/synapse/synapse-1.1.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f6fe248>
+Start Time:  1422864844.99
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     170   22    8   64  162   72  95  74  72  82  40 Non-Defective
+# Traing     Testing      86  162   64    8   22   72  26   5  73  38  40 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  40
+Time for Experiment:  0.00837087631226
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/velocity/velocity-1.4.csv']
+Predict:  ./defectprediction/data/velocity/velocity-1.5.csv
+Test:  ./defectprediction/data/velocity/velocity-1.6.csv
+Start Time:  1422864845.0
+Seive2_Initial . in middle of desert
+in middle of desert
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.9791720808696388, 45.92120064549661, 8.404602732448367, 4.057607694917346, 94.20417200807464]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     151   63  119   15   32   41  21  19  68  32  34 Non-Defective
+# Traing     Testing      78   32   15  119   63   41  81  79  35  48  34 Defective 
+
+Time for Experiment:  9.46623182297
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/velocity/velocity-1.4.csv']
+Predict:  ./defectprediction/data/velocity/velocity-1.5.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f6d86c8>
+Start Time:  1422864854.46
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     151   65  128   13   23   38  15  17  64  25  26 Non-Defective
+# Traing     Testing      78   23   13  128   65   38  83  85  34  48  26 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  26
+Time for Experiment:  0.00974082946777
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/xalan/xalan-2.4.csv', './defectprediction/data/xalan/xalan-2.5.csv']
+Predict:  ./defectprediction/data/xalan/xalan-2.6.csv
+Test:  ./defectprediction/data/xalan/xalan-2.7.csv
+Start Time:  1422864854.47
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.5249210619107376, 13.698964946263994, 19.187062385860173, 1.2501688227878573, 74.0271341834831]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing      11  196    0  702   11   23 100  78   2   3  36 Non-Defective
+# Traing     Testing     898   11  702    0  196   23  22   0 100  36  36 Defective 
+
+Time for Experiment:  18.5740320683
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/xalan/xalan-2.4.csv', './defectprediction/data/xalan/xalan-2.5.csv']
+Predict:  ./defectprediction/data/xalan/xalan-2.6.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f685dd0>
+Start Time:  1422864873.05
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing      11  316    0  582   11   36 100  65   2   4  52 Non-Defective
+# Traing     Testing     898   11  582    0  316   36  35   0 100  52  52 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  52
+Time for Experiment:  0.0504629611969
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/xerces/xerces-1.1.csv', './defectprediction/data/xerces/xerces-1.2.csv']
+Predict:  ./defectprediction/data/xerces/xerces-1.3.csv
+Test:  ./defectprediction/data/xerces/xerces-1.4.csv
+Start Time:  1422864873.1
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.31668575601706406, 26.382779498727707, 16.58003743415962, 7.091459297047464, 38.03282872811498]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     151   32   39  405  112   24  74  93  22  34  13 Non-Defective
+# Traing     Testing     437  112  405   39   32   24   7  26  45  13  13 Defective 
+
+Time for Experiment:  11.707130909
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/xerces/xerces-1.1.csv', './defectprediction/data/xerces/xerces-1.2.csv']
+Predict:  ./defectprediction/data/xerces/xerces-1.3.csv
+Test:  <searchers.Seive2_Initial instance at 0x10f5dbb90>
+Start Time:  1422864884.8
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     151   78   46  359  105   31  70  82  23  34  28 Non-Defective
+# Traing     Testing     437  105  359   46   78   31  18  30  63  28  28 Defective 
+>>>>>>>>>>>>>>>>>>>>>>>>>  28
+Time for Experiment:  0.0221381187439

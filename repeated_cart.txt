@@ -1,0 +1,50 @@
+Model Name: TunedCart
+Date: 02/02/2015
+========================TunedWhere================================
+Training :  ['./defectprediction/data/ant/ant-1.3.csv', './defectprediction/data/ant/ant-1.4.csv', './defectprediction/data/ant/ant-1.5.csv']
+Predict:  ./defectprediction/data/ant/ant-1.6.csv
+Test:  ./defectprediction/data/ant/ant-1.7.csv
+Start Time:  1422896082.46
+Seive2_Initial . [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Maxi:  8
+Tuned Parameters:  [0.8764377233313465, 1.2671595827711273, 13.492928762828804, 6.021674168583393, 10.845913166094341]
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579    0    0  166  579   78 100 100  78  87   0 Non-Defective
+# Traing     Testing     166  579  166    0    0   78   0   0  78   0   0 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579    0    0  166  579   78 100 100  78  87   0 Non-Defective
+# Traing     Testing     166  579  166    0    0   78   0   0  78   0   0 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579    0    0  166  579   78 100 100  78  87   0 Non-Defective
+# Traing     Testing     166  579  166    0    0   78   0   0  78   0   0 Defective 
+# db         rx           n     a    b    c   d    acc pd  pf  prec f  g  class     
+----------------------------------------------------------------------------------------------------
+# Traing     Testing     579   58   29  108  550   82  95  65  84  89  51 Non-Defective
+# Traing     Testing     166  550  108   29   58   82  35   5  67  46  51 Defective 

@@ -3,6 +3,7 @@ import sys
 import random
 import math
 
+from cart import *
 from witschey_main import *
 #import numpy as np
 from models import *
@@ -64,7 +65,21 @@ def getdata():
 
 	return returnList
 
-
+def stats(listl):
+  def median(lst,ordered=False):
+    if not ordered: lst= sorted(lst)
+    n = len(lst)
+    p = n//2
+    if n % 2: return lst[p]
+    q = p - 1
+    q = max(0,min(q,n))
+    return (lst[p] + lst[q])/2
+  from scipy.stats import scoreatpercentile
+  q1 = scoreatpercentile(listl,25)
+  q3 = scoreatpercentile(listl,75)  
+  #print "IQR : %f"%(q3-q1)
+  #print "Median: %f"%median(listl)
+  return median(listl),(q3-q1)
 
   
 
@@ -76,7 +91,7 @@ def multipleRun():
 	   predict = f[1]
 	   test = f[2]
 	   
-	   for klass in [TunedWhere]:#,DTLZ5,DTLZ6,DTLZ7]:
+	   for klass in [TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
 	     print "Model Name: %s"%klass.__name__
 	     eraCollector=defaultdict(list)
 	     timeCollector=defaultdict(list)
@@ -130,7 +145,10 @@ def multipleRun():
 	       print "Tuned Parameters: ",solution
 	       The.option.baseLine = True
 	       The.option.tuning  = False
-	       runPredict(solution,tr,ts)
+	       #runPredict(solution,tr,ts)
+	       median,iqr = stats([runCart(solution,tr,ts) for x in xrange(10)])
+	       print "Median: ",median," IQR: ",iqr
+	      
 	        #print "Score: %f"%(score)
 	       print
 	       print "Time for Experiment: ",time.time() - tstart
@@ -142,7 +160,10 @@ def multipleRun():
 	   print "Test: ",test
 	   tstart = time.time()
 	   print "Start Time: ",tstart
-	   NaiveWhere(f[0],f[2])
+	   #NaiveWhere(f[0],f[2])
+
+	   median,iqr = stats([NaiveCart(f[0],f[2]) for x in xrange(10)])
+	   print "Median: ",median," IQR: ",iqr
 	   print "Time for Experiment: ",time.time() - tstart
 
 
