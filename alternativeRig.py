@@ -4,6 +4,7 @@ import random
 import math
 
 from cart import *
+from randomforest import *
 from witschey_main import *
 #import numpy as np
 from models import *
@@ -91,67 +92,67 @@ def multipleRun():
 	   predict = f[1]
 	   test = f[2]
 	   
-	   for klass in [TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
-	     print "Model Name: %s"%klass.__name__
-	     eraCollector=defaultdict(list)
-	     timeCollector=defaultdict(list)
-	     evalCollector=defaultdict(list)
-	     print ("Date: %s"%time.strftime("%d/%m/%Y"))
-	     #bmin,bmax = tempC.baseline(tempC.minR, tempC.maxR) 
-	     bmin = -3.2801
-	     bmax = 5.6677
-	     naiveWhere = []
-	     print "========================TunedWhere================================"
-	     #print "Baseline Finished: ",bmin,bmax
-	     print "Training : ",train
-	     print "Predict: ",predict
-	     print "Test: ",test
-	     tstart = time.time()
-	     print "Start Time: ",tstart
-	     for searcher in [Seive2_Initial]:
-	       n = 0.0
-	       The.option.baseLine = False
-	       The.option.tuning  = True
-	       listTimeTaken = []
-	       listScores = []
-	       list_eval = []
-	       random.seed(6)
-	       historyhi=[-9e10 for count in xrange(myModelobjf[klass.__name__])]
-	       historylo=[9e10 for count in xrange(myModelobjf[klass.__name__])]
-	       print searcher.__name__,
-	       for _ in range(r):
-	         test = searcher(klass(train,predict),"display2",bmin,bmax)
-	         print ".", 
+	   # for klass in [TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
+	   #   print "Model Name: %s"%klass.__name__
+	   #   eraCollector=defaultdict(list)
+	   #   timeCollector=defaultdict(list)
+	   #   evalCollector=defaultdict(list)
+	   #   print ("Date: %s"%time.strftime("%d/%m/%Y"))
+	   #   #bmin,bmax = tempC.baseline(tempC.minR, tempC.maxR) 
+	   #   bmin = -3.2801
+	   #   bmax = 5.6677
+	   #   naiveWhere = []
+	   #   print "========================TunedWhere================================"
+	   #   #print "Baseline Finished: ",bmin,bmax
+	   #   print "Training : ",train
+	   #   print "Predict: ",predict
+	   #   print "Test: ",test
+	   #   tstart = time.time()
+	   #   print "Start Time: ",tstart
+	   #   for searcher in [Seive2_Initial]:
+	   #     n = 0.0
+	   #     The.option.baseLine = False
+	   #     The.option.tuning  = True
+	   #     listTimeTaken = []
+	   #     listScores = []
+	   #     list_eval = []
+	   #     random.seed(6)
+	   #     historyhi=[-9e10 for count in xrange(myModelobjf[klass.__name__])]
+	   #     historylo=[9e10 for count in xrange(myModelobjf[klass.__name__])]
+	   #     print searcher.__name__,
+	   #     for _ in range(r):
+	   #       test = searcher(klass(train,predict),"display2",bmin,bmax)
+	   #       print ".", 
 	        
-	         t1 = time.time()
-	         solution,score,model = test.evaluate()
+	   #       t1 = time.time()
+	   #       solution,score,model = test.evaluate()
 
-	         for x in xrange(model.objf):
-	           #print len(model.past[x].listing)
-	           #print x
-	           historyhi[x]=max(model.past[x].historyhi,historyhi[x])
-	           historylo[x]=min(model.past[x].historylo,historylo[x])
-	           sys.stdout.flush()
-	         timeTaken = (time.time() - t1) * 1000
-	         #listTimeTaken.append(timeTaken)
-	         list_eval.append(model.no_eval)
-	         listScores.append(score)
-	         timeCollector[searcher.__name__]=listTimeTaken
-	       eraCollector[searcher.__name__]=listScores
-	       evalCollector[searcher.__name__]=list_eval
+	   #       for x in xrange(model.objf):
+	   #         #print len(model.past[x].listing)
+	   #         #print x
+	   #         historyhi[x]=max(model.past[x].historyhi,historyhi[x])
+	   #         historylo[x]=min(model.past[x].historylo,historylo[x])
+	   #         sys.stdout.flush()
+	   #       timeTaken = (time.time() - t1) * 1000
+	   #       #listTimeTaken.append(timeTaken)
+	   #       list_eval.append(model.no_eval)
+	   #       listScores.append(score)
+	   #       timeCollector[searcher.__name__]=listTimeTaken
+	   #     eraCollector[searcher.__name__]=listScores
+	   #     evalCollector[searcher.__name__]=list_eval
 
-	       tr = f[0]
-	       ts = f[2]
-	       print "Tuned Parameters: ",solution
-	       The.option.baseLine = True
-	       The.option.tuning  = False
-	       #runPredict(solution,tr,ts)
-	       median,iqr = stats([runCart(solution,tr,ts) for x in xrange(10)])
-	       print "Median: ",median," IQR: ",iqr
+	   #     tr = f[0]
+	   #     ts = f[2]
+	   #     print "Tuned Parameters: ",solution
+	   #     The.option.baseLine = True
+	   #     The.option.tuning  = False
+	   #     #runPredict(solution,tr,ts)
+	   #     median,iqr = stats([runCart(solution,tr,ts) for x in xrange(10)])
+	   #     print "Median: ",median," IQR: ",iqr
 	      
-	        #print "Score: %f"%(score)
-	       print
-	       print "Time for Experiment: ",time.time() - tstart
+	   #      #print "Score: %f"%(score)
+	   #     print
+	   #     print "Time for Experiment: ",time.time() - tstart
 
 	   print "==========================NaiveWhere=============================="
 	   #print "Baseline Finished: ",bmin,bmax
@@ -162,7 +163,7 @@ def multipleRun():
 	   print "Start Time: ",tstart
 	   #NaiveWhere(f[0],f[2])
 
-	   median,iqr = stats([NaiveCart(f[0],f[2]) for x in xrange(10)])
+	   median,iqr = stats([NaiveRF(f[0],f[2]) for x in xrange(10)])
 	   print "Median: ",median," IQR: ",iqr
 	   print "Time for Experiment: ",time.time() - tstart
 

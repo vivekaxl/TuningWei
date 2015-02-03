@@ -1,0 +1,84 @@
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/ant/ant-1.3.csv', './defectprediction/data/ant/ant-1.4.csv', './defectprediction/data/ant/ant-1.5.csv']
+Predict:  ./defectprediction/data/ant/ant-1.6.csv
+Test:  ./defectprediction/data/ant/ant-1.7.csv
+Start Time:  1422928137.6
+Median:  19.0  IQR:  2.5
+Time for Experiment:  2.05495905876
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/camel/camel-1.0.csv', './defectprediction/data/camel/camel-1.2.csv']
+Predict:  ./defectprediction/data/camel/camel-1.4.csv
+Test:  ./defectprediction/data/camel/camel-1.6.csv
+Start Time:  1422928139.65
+Median:  35.5  IQR:  2.75
+Time for Experiment:  2.64347290993
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/ivy/ivy-1.1.csv']
+Predict:  ./defectprediction/data/ivy/ivy-1.4.csv
+Test:  ./defectprediction/data/ivy/ivy-2.0.csv
+Start Time:  1422928142.29
+Median:  69.0  IQR:  1.75
+Time for Experiment:  0.799774169922
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/jedit/jedit-3.2.csv', './defectprediction/data/jedit/jedit-4.0.csv', './defectprediction/data/jedit/jedit-4.1.csv']
+Predict:  ./defectprediction/data/jedit/jedit-4.2.csv
+Test:  ./defectprediction/data/jedit/jedit-4.3.csv
+Start Time:  1422928143.09
+Median:  60.0  IQR:  0.0
+Time for Experiment:  2.31170797348
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/log4j/log4j-1.0.csv']
+Predict:  ./defectprediction/data/log4j/log4j-1.1.csv
+Test:  ./defectprediction/data/log4j/log4j-1.2.csv
+Start Time:  1422928145.41
+Median:  38.0  IQR:  4.25
+Time for Experiment:  0.738029003143
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/lucene/lucene-2.0.csv']
+Predict:  ./defectprediction/data/lucene/lucene-2.2.csv
+Test:  ./defectprediction/data/lucene/lucene-2.4.csv
+Start Time:  1422928146.14
+Median:  54.0  IQR:  1.5
+Time for Experiment:  1.06252503395
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/mw1/mw1.1.csv']
+Predict:  ./defectprediction/data/mw1/mw1.2.csv
+Test:  ./defectprediction/data/mw1/mw1.3.csv
+Start Time:  1422928147.21
+Median:  39.5  IQR:  13.0
+Time for Experiment:  0.731378078461
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/poi/poi-1.5.csv', './defectprediction/data/poi/poi-2.0.csv']
+Predict:  ./defectprediction/data/poi/poi-2.5.csv
+Test:  ./defectprediction/data/poi/poi-3.0.csv
+Start Time:  1422928147.94
+Median:  20.0  IQR:  2.0
+Time for Experiment:  1.98919701576
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/synapse/synapse-1.0.csv']
+Predict:  ./defectprediction/data/synapse/synapse-1.1.csv
+Test:  ./defectprediction/data/synapse/synapse-1.2.csv
+Start Time:  1422928149.93
+Median:  14.0  IQR:  9.0
+Time for Experiment:  0.906357049942
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/velocity/velocity-1.4.csv']
+Predict:  ./defectprediction/data/velocity/velocity-1.5.csv
+Test:  ./defectprediction/data/velocity/velocity-1.6.csv
+Start Time:  1422928150.83
+Median:  18.0  IQR:  1.5
+Time for Experiment:  1.07958197594
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/xalan/xalan-2.4.csv', './defectprediction/data/xalan/xalan-2.5.csv']
+Predict:  ./defectprediction/data/xalan/xalan-2.6.csv
+Test:  ./defectprediction/data/xalan/xalan-2.7.csv
+Start Time:  1422928151.91
+Median:  49.0  IQR:  2.0
+Time for Experiment:  4.50443482399
+==========================NaiveWhere==============================
+Training :  ['./defectprediction/data/xerces/xerces-1.1.csv', './defectprediction/data/xerces/xerces-1.2.csv']
+Predict:  ./defectprediction/data/xerces/xerces-1.3.csv
+Test:  ./defectprediction/data/xerces/xerces-1.4.csv
+Start Time:  1422928156.42
+Median:  10.0  IQR:  0.75
+Time for Experiment:  1.8335340023
