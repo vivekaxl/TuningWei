@@ -4,13 +4,9 @@ import random
 import math
 
 from cart import *
-from randomforest import *
-from witschey_main import *
-#import numpy as np
 from models import *
 from searchers import *
 from options import *
-from utilities import *
 import time
 from sk import *
 import sys
@@ -56,10 +52,11 @@ def getdata():
 		#print path
 		import os
 		templst = [path +"/" + x for x in sorted(os.listdir(path))]
-		#print templst
-		training = templst[:-2]
-		tuning = templst[-2]
-		testing = templst[-1]
+		assert(len(templst) >= 3 ),"Something's Wrong"
+		#print =
+		training = templst[0]
+		tuning = templst[1]
+		testing = templst[2]
 		#print training,tuning,testing
 		returnList.append([training,tuning,testing])
 
@@ -92,99 +89,62 @@ def multipleRun():
 	   predict = f[1]
 	   test = f[2]
 	   
-	   # for klass in [TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
-	   #   print "Model Name: %s"%klass.__name__
-	   #   eraCollector=defaultdict(list)
-	   #   timeCollector=defaultdict(list)
-	   #   evalCollector=defaultdict(list)
-	   #   print ("Date: %s"%time.strftime("%d/%m/%Y"))
-	   #   #bmin,bmax = tempC.baseline(tempC.minR, tempC.maxR) 
-	   #   bmin = -3.2801
-	   #   bmax = 5.6677
-	   #   naiveWhere = []
-	   #   print "========================TunedWhere================================"
-	   #   #print "Baseline Finished: ",bmin,bmax
-	   #   print "Training : ",train
-	   #   print "Predict: ",predict
-	   #   print "Test: ",test
-	   #   tstart = time.time()
-	   #   print "Start Time: ",tstart
-	   #   for searcher in [Seive2_Initial]:
-	   #     n = 0.0
-	   #     The.option.baseLine = False
-	   #     The.option.tuning  = True
-	   #     listTimeTaken = []
-	   #     listScores = []
-	   #     list_eval = []
-	   #     random.seed(6)
-	   #     historyhi=[-9e10 for count in xrange(myModelobjf[klass.__name__])]
-	   #     historylo=[9e10 for count in xrange(myModelobjf[klass.__name__])]
-	   #     print searcher.__name__,
-	   #     for _ in range(r):
-	   #       test = searcher(klass(train,predict),"display2",bmin,bmax)
-	   #       print ".", 
-	        
-	   #       t1 = time.time()
-	   #       solution,score,model = test.evaluate()
+	   for klass in [TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
+	     print "Model Name: %s"%klass.__name__
+	     evalScores=defaultdict(list)
+	     print ("Date: %s"%time.strftime("%d/%m/%Y"))
+	     bmin = -3.2801
+	     bmax = 5.6677
+	     naiveWhere = []
+	     print "========================TunedWhere================================"
+	     print "Training : ",train
+	     print "Predict: ",predict
+	     print "Test: ",test
+	     tstart = time.time()
+	     print "Start Time: ",tstart
+	     for searcher in [DE]:#Seive2_Initial]:
+	       print "Searcher: ",searcher.__name__
+	       n = 0.0
+	       The.option.baseLine = False
+	       The.option.tuning  = True
+	       listTimeTaken = []
+	       listScores = []
+	       list_eval = []
+	       random.seed(6)
+	       historyhi=[-9e10 for count in xrange(myModelobjf[klass.__name__])]
+	       historylo=[9e10 for count in xrange(myModelobjf[klass.__name__])]
+	       print searcher.__name__,
+	       for _ in range(r):
+	         search = searcher(klass(train,predict),"display2",bmin,bmax)
+	         print ".", 
+	         solution,model = search.evaluate()
 
-	   #       for x in xrange(model.objf):
-	   #         #print len(model.past[x].listing)
-	   #         #print x
-	   #         historyhi[x]=max(model.past[x].historyhi,historyhi[x])
-	   #         historylo[x]=min(model.past[x].historylo,historylo[x])
-	   #         sys.stdout.flush()
-	   #       timeTaken = (time.time() - t1) * 1000
-	   #       #listTimeTaken.append(timeTaken)
-	   #       list_eval.append(model.no_eval)
-	   #       listScores.append(score)
-	   #       timeCollector[searcher.__name__]=listTimeTaken
-	   #     eraCollector[searcher.__name__]=listScores
-	   #     evalCollector[searcher.__name__]=list_eval
+	     print "Time for tuning: ", time.time() - tstart
+	     print "Number of Evaluation: ",model.no_eval
+	     tstart = time.time()
 
-	   #     tr = f[0]
-	   #     ts = f[2]
-	   #     print "Tuned Parameters: ",solution
-	   #     The.option.baseLine = True
-	   #     The.option.tuning  = False
-	   #     #runPredict(solution,tr,ts)
-	   #     median,iqr = stats([runCart(solution,tr,ts) for x in xrange(10)])
-	   #     print "Median: ",median," IQR: ",iqr
-	      
-	   #      #print "Score: %f"%(score)
-	   #     print
-	   #     print "Time for Experiment: ",time.time() - tstart
+	     tr = f[0]
+	     ts = f[2]
+	     print "Tuned Parameters: ",solution.dec
+	     temp_scores = [runCart(solution.dec,tr,ts) for x in xrange(10)]
+	     evalScores[klass.__name__ + "Tuned"] = temp_scores
+	     median,iqr = stats(temp_scores)
+	     print "Median: ",median," IQR: ",iqr
+	     print "Time for Running: ",time.time() - tstart
 
 	   print "==========================NaiveWhere=============================="
 	   #print "Baseline Finished: ",bmin,bmax
 	   print "Training : ",train
-	   print "Predict: ",predict
 	   print "Test: ",test
 	   tstart = time.time()
-	   print "Start Time: ",tstart
-	   #NaiveWhere(f[0],f[2])
-
-	   median,iqr = stats([NaiveRF(f[0],f[2]) for x in xrange(10)])
+	   print "Start Time: ",
+	   temp_scores = [NaiveCart(train,test) for _ in xrange(10)]
+	   evalScores['NaiveCart'] = temp_scores
+	   median,iqr = stats(temp_scores)
 	   print "Median: ",median," IQR: ",iqr
 	   print "Time for Experiment: ",time.time() - tstart
-
-
-     
-     # listbaseline = []
-     # for _ in range(r):
-     #   testB = Baseline(klass(),"display2",bmin,bmax)
-     #   tmp = testB.evaluate()
-     #   listbaseline.extend(tmp)
-     # print "Baseline: length is: ",len(listbaseline)
-     # eraCollector['baseline'] = listbaseline
-     #callrdivdemo(eraCollector)
-     #raise Exception("I know python!")
-     #print eraCollector
-     #print evalCollector
-     #print timeCollector
-     # print "=========================================================="
-     # callrdivdemo(eraCollector)
-     # callrdivdemo(evalCollector,"%5.0f")
-     #callrdivdemo(timeCollector)
+	   print evalScores
+	   callrdivdemo(evalScores,"%5.0f")
 
 
 def step2():
@@ -204,46 +164,13 @@ def callrdivdemo(eraCollector,show="%5.2f"):
   #print variant
   rdivarray=[]
   for y in xrange(variant):
-      #print "Length of array: %f"%len(eraCollector[keylist[y]][x])
       temp = eraCollector[keylist[y]]
-      #print temp
       temp.insert(0,str(keylist[y]))
-      #print temp
       rdivarray.append(temp)
   rdivDemo(rdivarray,show) 
-  
-
-
-def testDE():
-  for klass in [Viennet]:
-    random.seed(6)
-    test = DE(klass(),"display2")          
-    print test.evaluate()
 
 if __name__ == '__main__': 
- # random.seed(1)
- # nums = [random.random()**2 for _ in range(100)]
- # print xtile(nums,lo=0,hi=1.0,width=25,show=" %3.2f")
- # model = ZDT1()
- # model.testgx()
- # for klass in [ZDT1]:
- #   print klass.__name__
-
- #for x in xrange(1,8):
- #  print "========================================="
- #  opt = 1000*x
- #  myoptions['Seive']['initialpoints'] = str(opt)
- #  multipleRun()
-
  multipleRun()
- # t = getdata()
- # for f in t:
- # 	print "Training: ",f[0]
- # 	print "Tuning: ",f[1]
- # 	print "Testing: ",f[2]
- 	# print
- #testDE()
- #part6()
  #step2()
 
 

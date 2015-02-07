@@ -49,7 +49,7 @@ def weitransform(list):
 def runCart(listpoints,train,predict):
 	indep,dep = buildtablefromfile(train)
 	from sklearn.tree import DecisionTreeClassifier
-	clf = DecisionTreeClassifier(max_features=listpoints[0],max_depth=int(listpoints[1]),min_samples_split=int(listpoints[2]),min_samples_leaf=int(listpoints[3]),max_leaf_nodes=int(listpoints[4]),random_state = 0)
+	clf = DecisionTreeClassifier(max_features=listpoints[0],max_depth=int(listpoints[1]),min_samples_split=int(listpoints[2]),min_samples_leaf=int(listpoints[3]),max_leaf_nodes=int(listpoints[4]))
 	clf = clf.fit(indep,dep)
 	actual_indep,actual_dep = buildtablefromfile(predict)
 	arr = clf.predict(actual_indep)
@@ -60,6 +60,7 @@ def runCart(listpoints,train,predict):
 	# 		print result[x],actual_dep[x],x
 	scores = _Abcd(result,weitransform(actual_dep))
 	#scores = _Abcd([1,1,1,1,1],["Defective","Defective","Defective","Defective","Defective"])
+	#print "+++++++++++++++++++ ",scores[-1][-1]
 	return scores[-1][-1]
 
 class TunedCart(ModelBasic):
@@ -111,7 +112,6 @@ def NaiveCart(train,predict):
 	# 	if result[x] != actual_dep[x]:
 	# 		print result[x],actual_dep[x],x
 	scores = _Abcd(result,weitransform(actual_dep))
-	print ">>>>>>>>>>>>>>>>>>>>>>>>> ",scores[-1][-1] 
 	#scores = _Abcd([1,1,1,1,1],["Defective","Defective","Defective","Defective","Defective"])
 	return scores[-1][-1]
 

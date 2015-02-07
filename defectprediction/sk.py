@@ -475,7 +475,7 @@ def writefile(s):
   f.write(s+'\n')
   f.close()
 
-def rdivDemo(data):
+def rdivDemo(data,show1="%5.2f"):
   def z(x):
     return int(100 * (x - lo) / (hi - lo + 0.00001))
   data = map(lambda lst:Num(lst[0],lst[1:]),
@@ -484,24 +484,20 @@ def rdivDemo(data):
   ranks=[]
   for x in scottknott(data,useA12=True):
     ranks += [(x.rank,x.median(),x)]
+
   all=[]
   for _,__,x in sorted(ranks): all += x.all
   all = sorted(all)
   lo, hi = all[0], all[-1]
   line = "----------------------------------------------------"
   last = None
-  print  ('%4s , %20s ,    %s   , %4s ' % \
+  print  ('\t%4s , \t%12s ,    \t%5s   , \t%5s ' % \
                ('rank', 'name', 'med', 'iqr'))+ "\n"+ line
-  writefile(('%4s , %20s ,    %s   , %4s ' % \
-               ('rank', 'name', 'med', 'iqr'))+ "\n"+ line)
   for _,__,x in sorted(ranks):
     q1,q2,q3 = x.quartiles()
-    print  ('%4s , %20s ,    %4s  ,  %4s ' % \
-                 (x.rank+1, x.name, q2, q3 - q1))  + \
-              xtile(x.all,lo=lo,hi=hi,width=30,show="%5.2f")
-    writefile(('%4s , %20s ,    %4s  ,  %4s ' % \
-                 (x.rank+1, x.name, q2, q3 - q1))  + \
-              xtile(x.all,lo=lo,hi=hi,width=30,show="%5.2f"))
+    print  ('\t%4s , \t%12s ,    \t%g  ,  \t%5g\t   ' % \
+                 (x.rank+1, x.name, float(q2), float(q3 - q1)))  + \
+              xtile(x.all,lo=lo,hi=hi,width=40,show=show1)
     last = x.rank 
 """
 
