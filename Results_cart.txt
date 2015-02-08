@@ -1,0 +1,300 @@
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/ant/ant-1.3.csv
+Predict:  ./defectprediction/data/ant/ant-1.4.csv
+Test:  ./defectprediction/data/ant/ant-1.5.csv
+Start Time:  1423286683.57
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  18.3625559807
+Number of Evaluation:  2749
+Tuned Parameters:  [1, 50, 2, 1, 99.29430346158198]
+Median:  47.5  IQR:  13.25
+Time for Running:  0.0800530910492
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/ant/ant-1.3.csv
+Test:  ./defectprediction/data/ant/ant-1.5.csv
+Start Time:  Median:  55.0  IQR:  9.25
+Time for Experiment:  0.080943107605
+defaultdict(<type 'list'>, {'TunedCartTuned': [64, 49, 64, 42, 46, 58, 45, 42, 43, 53], 'NaiveCart': [61, 50, 61, 56, 55, 55, 52, 61, 49, 50]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	4600  ,  	 1000	   (-----       *       |        ---------- ),   42,    45,    49,    58,    64
+	   1 , 	   NaiveCart ,    	5500  ,  	  600	   (              ----  |  *                ),   50,    52,    55,    61,    61
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/camel/camel-1.0.csv
+Predict:  ./defectprediction/data/camel/camel-1.2.csv
+Test:  ./defectprediction/data/camel/camel-1.4.csv
+Start Time:  1423286702.15
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  42.5746219158
+Number of Evaluation:  2549
+Tuned Parameters:  [0.48735717115197397, 34.75192790191207, 2, 1.225975912324534, 52.61863305740022]
+Median:  16.0  IQR:  8.25
+Time for Running:  0.21240901947
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/camel/camel-1.0.csv
+Test:  ./defectprediction/data/camel/camel-1.4.csv
+Start Time:  Median:  23.5  IQR:  5.75
+Time for Experiment:  0.206489086151
+defaultdict(<type 'list'>, {'TunedCartTuned': [16, 18, 16, 24, 24, 14, 12, 15, 27, 13], 'NaiveCart': [29, 23, 18, 24, 30, 31, 25, 21, 23, 22]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	1600  ,  	  400	   (  ----  *           |    ------         ),   13,    15,    16,    24,    27
+	   2 , 	   NaiveCart ,    	2300  ,  	  300	   (                  --|--  *         ---- ),   21,    23,    24,    29,    31
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/ivy/ivy-1.1.csv
+Predict:  ./defectprediction/data/ivy/ivy-1.4.csv
+Test:  ./defectprediction/data/ivy/ivy-2.0.csv
+Start Time:  1423286745.19
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  7.0651679039
+Number of Evaluation:  999
+Tuned Parameters:  [0.3211522185698268, 1, 10.851142234934139, 2.332277022128906, 80.4]
+Median:  67.5  IQR:  22.5
+Time for Running:  0.1559009552
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/ivy/ivy-1.1.csv
+Test:  ./defectprediction/data/ivy/ivy-2.0.csv
+Start Time:  Median:  63.0  IQR:  1.75
+Time for Experiment:  0.139703035355
+defaultdict(<type 'list'>, {'TunedCartTuned': [74, 73, 53, 62, 74, 0, 18, 74, 51, 74], 'NaiveCart': [64, 62, 61, 63, 63, 63, 64, 61, 64, 62]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	   NaiveCart ,    	6300  ,  	  100	   (                    |           - *     ),   61,    62,    63,    64,    64
+	   1 , 	TunedCartTuned ,    	6200  ,  	 2300	   (         -----------|-------           *),   18,    53,    73,    74,    74
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/jedit/jedit-3.2.csv
+Predict:  ./defectprediction/data/jedit/jedit-4.0.csv
+Test:  ./defectprediction/data/jedit/jedit-4.1.csv
+Start Time:  1423286752.63
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  35.1294929981
+Number of Evaluation:  2699
+Tuned Parameters:  [0.347967610731201, 50, 7.104992632340179, 1, 100.0]
+Median:  64.5  IQR:  12.75
+Time for Running:  0.107614040375
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/jedit/jedit-3.2.csv
+Test:  ./defectprediction/data/jedit/jedit-4.1.csv
+Start Time:  Median:  70.0  IQR:  1.0
+Time for Experiment:  0.137845993042
+defaultdict(<type 'list'>, {'TunedCartTuned': [63, 72, 69, 55, 66, 58, 54, 54, 67, 70], 'NaiveCart': [68, 70, 69, 70, 72, 71, 70, 70, 71, 71]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	6300  ,  	 1200	   (--------            |     *      ------ ),   54,    58,    66,    69,    72
+	   2 , 	   NaiveCart ,    	7000  ,  	  100	   (                    |            --* -- ),   69,    70,    70,    71,    72
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/log4j/log4j-1.0.csv
+Predict:  ./defectprediction/data/log4j/log4j-1.1.csv
+Test:  ./defectprediction/data/log4j/log4j-1.2.csv
+Start Time:  1423286788.06
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  11.0790219307
+Number of Evaluation:  2149
+Tuned Parameters:  [0.27593277833764546, 8.102513399408307, 2, 10.735494492538944, 33.14011574878511]
+Median:  36.5  IQR:  6.25
+Time for Running:  0.0639369487762
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/log4j/log4j-1.0.csv
+Test:  ./defectprediction/data/log4j/log4j-1.2.csv
+Start Time:  Median:  50.0  IQR:  2.75
+Time for Experiment:  0.0611968040466
+defaultdict(<type 'list'>, {'TunedCartTuned': [29, 54, 43, 37, 24, 36, 27, 36, 37, 37], 'NaiveCart': [50, 51, 54, 50, 52, 51, 49, 46, 48, 48]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	3600  ,  	  800	   (   ------------  *--|------------------ ),   27,    36,    37,    37,    54
+	   2 , 	   NaiveCart ,    	5000  ,  	  300	   (                    |          -- *---- ),   48,    49,    50,    51,    54
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/lucene/lucene-2.0.csv
+Predict:  ./defectprediction/data/lucene/lucene-2.2.csv
+Test:  ./defectprediction/data/lucene/lucene-2.4.csv
+Start Time:  1423286799.31
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  24.4480068684
+Number of Evaluation:  2249
+Tuned Parameters:  [0.01, 49.95737296667429, 2, 1, 96.78723387291832]
+Median:  57.0  IQR:  2.25
+Time for Running:  0.109452962875
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/lucene/lucene-2.0.csv
+Test:  ./defectprediction/data/lucene/lucene-2.4.csv
+Start Time:  Median:  53.0  IQR:  0.0
+Time for Experiment:  0.118157863617
+defaultdict(<type 'list'>, {'TunedCartTuned': [53, 57, 58, 52, 57, 55, 58, 63, 57, 57], 'NaiveCart': [53, 55, 53, 55, 53, 53, 53, 53, 51, 51]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	   NaiveCart ,    	5300  ,  	    0	   (------*------       |                   ),   51,    53,    53,    53,    55
+	   2 , 	TunedCartTuned ,    	5700  ,  	  200	   (      -------------*|  ---------------- ),   53,    57,    57,    58,    63
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/mw1/mw1.1.csv
+Predict:  ./defectprediction/data/mw1/mw1.2.csv
+Test:  ./defectprediction/data/mw1/mw1.3.csv
+Start Time:  1423286824.05
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  4.30173802376
+Number of Evaluation:  1199
+Tuned Parameters:  [0.4228489169176239, 3.034886854243375, 12.573392139230211, 1, 100]
+Median:  20.0  IQR:  65.0
+Time for Running:  0.0623078346252
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/mw1/mw1.1.csv
+Test:  ./defectprediction/data/mw1/mw1.3.csv
+Start Time:  Median:  64.0  IQR:  9.75
+Time for Experiment:  0.0571098327637
+defaultdict(<type 'list'>, {'TunedCartTuned': [20, 0, 65, 20, 69, 0, 0, 0, 65, 69], 'NaiveCart': [64, 55, 68, 49, 64, 68, 64, 49, 68, 64]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	2000  ,  	 6500	   (           *        |                -- ),    0,     0,    20,    65,    69
+	   2 , 	   NaiveCart ,    	6400  ,  	  900	   (                    |       ---------*  ),   49,    64,    64,    68,    68
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/poi/poi-1.5.csv
+Predict:  ./defectprediction/data/poi/poi-2.0.csv
+Test:  ./defectprediction/data/poi/poi-2.5.csv
+Start Time:  1423286828.53
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  24.539126873
+Number of Evaluation:  1799
+Tuned Parameters:  [0.3335705605005143, 50, 2, 2.9409122343043017, 82.2727820036002]
+Median:  69.0  IQR:  4.25
+Time for Running:  0.212417840958
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/poi/poi-1.5.csv
+Test:  ./defectprediction/data/poi/poi-2.5.csv
+Start Time:  Median:  69.5  IQR:  2.0
+Time for Experiment:  0.21879196167
+defaultdict(<type 'list'>, {'TunedCartTuned': [71, 70, 64, 66, 68, 64, 71, 69, 69, 73], 'NaiveCart': [70, 70, 67, 68, 70, 69, 68, 72, 68, 71]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	6900  ,  	  400	   (-----------------   | *        -------- ),   64,    68,    69,    71,    73
+	   1 , 	   NaiveCart ,    	6900  ,  	  200	   (                    |     *--------     ),   68,    68,    70,    70,    72
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/synapse/synapse-1.0.csv
+Predict:  ./defectprediction/data/synapse/synapse-1.1.csv
+Test:  ./defectprediction/data/synapse/synapse-1.2.csv
+Start Time:  1423286853.6
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  32.2744557858
+Number of Evaluation:  3749
+Tuned Parameters:  [0.07858650032535508, 23.354418202230452, 2.1004871733604586, 1, 81.69048760674379]
+Median:  35.5  IQR:  5.5
+Time for Running:  0.125891208649
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/synapse/synapse-1.0.csv
+Test:  ./defectprediction/data/synapse/synapse-1.2.csv
+Start Time:  Median:  39.0  IQR:  2.5
+Time for Experiment:  0.149950027466
+defaultdict(<type 'list'>, {'TunedCartTuned': [37, 37, 37, 21, 39, 21, 33, 31, 34, 37], 'NaiveCart': [37, 39, 39, 40, 43, 37, 40, 42, 34, 39]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	3400  ,  	  600	   (--------------------|        *--        ),   21,    33,    37,    37,    39
+	   2 , 	   NaiveCart ,    	3900  ,  	  300	   (                    |        ---* ----- ),   37,    39,    39,    40,    43
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/velocity/velocity-1.4.csv
+Predict:  ./defectprediction/data/velocity/velocity-1.5.csv
+Test:  ./defectprediction/data/velocity/velocity-1.6.csv
+Start Time:  1423286886.22
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  13.4466018677
+Number of Evaluation:  1899
+Tuned Parameters:  [0.01, 42.34457182316094, 2, 13.383933075532312, 100]
+Median:  23.5  IQR:  10.5
+Time for Running:  0.0610828399658
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/velocity/velocity-1.4.csv
+Test:  ./defectprediction/data/velocity/velocity-1.6.csv
+Start Time:  Median:  23.0  IQR:  1.5
+Time for Experiment:  0.0828220844269
+defaultdict(<type 'list'>, {'TunedCartTuned': [28, 17, 26, 0, 45, 21, 15, 26, 47, 17], 'NaiveCart': [21, 23, 23, 23, 22, 24, 27, 22, 24, 23]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	   NaiveCart ,    	2300  ,  	  100	   (                  -*|-                  ),   22,    23,    23,    24,    27
+	   1 , 	TunedCartTuned ,    	2100  ,  	  900	   (            --      | *---------------- ),   15,    17,    26,    28,    47
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/xalan/xalan-2.4.csv
+Predict:  ./defectprediction/data/xalan/xalan-2.5.csv
+Test:  ./defectprediction/data/xalan/xalan-2.6.csv
+Start Time:  1423286899.86
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  68.6660470963
+Number of Evaluation:  2149
+Tuned Parameters:  [0.4284239525630791, 13.545629024427702, 2, 1, 81.4188155015654]
+Median:  43.5  IQR:  13.0
+Time for Running:  0.437599897385
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/xalan/xalan-2.4.csv
+Test:  ./defectprediction/data/xalan/xalan-2.6.csv
+Start Time:  Median:  33.5  IQR:  4.5
+Time for Experiment:  0.436224937439
+defaultdict(<type 'list'>, {'TunedCartTuned': [48, 44, 43, 24, 28, 45, 24, 43, 46, 44], 'NaiveCart': [36, 50, 38, 34, 33, 32, 31, 48, 33, 33]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	   NaiveCart ,    	3300  ,  	  300	   (            -  *    |------------------ ),   32,    33,    34,    38,    50
+	   1 , 	TunedCartTuned ,    	4300  ,  	 1600	   (--------------------|-------- * ----    ),   24,    43,    44,    45,    48
+Model Name: TunedCart
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/xerces/xerces-1.1.csv
+Predict:  ./defectprediction/data/xerces/xerces-1.2.csv
+Test:  ./defectprediction/data/xerces/xerces-1.3.csv
+Start Time:  1423286969.45
+Searcher:  DE
+DE . lost it lost it lost it lost it lost it
+Time for tuning:  20.1155378819
+Number of Evaluation:  1899
+Tuned Parameters:  [0.9579534580371236, 19.946066905389017, 12.871651619279266, 4.150076302654188, 74.88102270049063]
+Median:  43.0  IQR:  1.75
+Time for Running:  0.117164850235
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/xerces/xerces-1.1.csv
+Test:  ./defectprediction/data/xerces/xerces-1.3.csv
+Start Time:  Median:  50.5  IQR:  1.0
+Time for Experiment:  0.134932041168
+defaultdict(<type 'list'>, {'TunedCartTuned': [44, 43, 45, 45, 45, 43, 43, 43, 43, 43], 'NaiveCart': [52, 48, 52, 50, 50, 48, 51, 51, 51, 50]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	TunedCartTuned ,    	4300  ,  	  100	   (*                   |                   ),   43,    43,    43,    45,    45
+	   2 , 	   NaiveCart ,    	5000  ,  	  100	   (                    | ---------    *--- ),   48,    50,    51,    51,    52

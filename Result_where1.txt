@@ -1,0 +1,15 @@
+Model Name: TunedWhere
+Date: 07/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/camel/camel-1.0.csv
+Predict:  ./defectprediction/data/camel/camel-1.2.csv
+Test:  ./defectprediction/data/camel/camel-1.4.csv
+Start Time:  1423331064.26
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  90
+f:  0.8
+cf:  0.9
+Lives:  5
+01234567891011121314151617181920212223

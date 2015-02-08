@@ -15,7 +15,7 @@ myoptions = {'MaxWalkSat':{'maxTries':'50','maxChanges':'2000','threshold':'0.00
 'Seive2_V50_2':{'initialpoints':'1000','intermaxlimit':'10','extermaxlimit':'10','threshold':'1','depth':'6','tgen':'1'},
 'Seive2_V50_3':{'initialpoints':'1000','intermaxlimit':'20','extermaxlimit':'20','threshold':'1','depth':'20','tgen':'1'},
 'Seive7_2':{'tgen':'1000'},
-'Seive2_Initial':{'tgen':'500'},
+'Seive2_Initial':{'tgen':'500','intermaxlimit':'10','extermaxlimit':'10','threshold':'1'},
 'DE2':{'initial':500}}
 myModeloptions = {'Lives': 4,'a12':0.56}
 myModelobjf = {'Viennet':3,'Schaffer':2, 'Fonseca':2, 'Kursawe':2, 'ZDT1':2,'ZDT3':2,'DTLZ7':20,'Schwefel':1,'Osyczka':2,

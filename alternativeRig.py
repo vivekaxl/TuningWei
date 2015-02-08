@@ -89,7 +89,7 @@ def multipleRun():
 	   predict = f[1]
 	   test = f[2]
 	   
-	   for klass in [TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
+	   for klass in [TunedWhere]:#TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
 	     print "Model Name: %s"%klass.__name__
 	     evalScores=defaultdict(list)
 	     print ("Date: %s"%time.strftime("%d/%m/%Y"))
@@ -102,7 +102,7 @@ def multipleRun():
 	     print "Test: ",test
 	     tstart = time.time()
 	     print "Start Time: ",tstart
-	     for searcher in [DE]:#Seive2_Initial]:
+	     for searcher in [DE,Seive2_Initial]:
 	       print "Searcher: ",searcher.__name__
 	       n = 0.0
 	       The.option.baseLine = False
@@ -116,21 +116,23 @@ def multipleRun():
 	       print searcher.__name__,
 	       for _ in range(r):
 	         search = searcher(klass(train,predict),"display2",bmin,bmax)
+	         #search = searcher(klass(),"display2",bmin,bmax)
 	         print ".", 
 	         solution,model = search.evaluate()
 
-	     print "Time for tuning: ", time.time() - tstart
-	     print "Number of Evaluation: ",model.no_eval
-	     tstart = time.time()
+	       print "Time for tuning: ", time.time() - tstart
+	       print "Number of Evaluation: ",model.no_eval
+	       print "High Score: ",solution,scores
+	       tstart = time.time()
 
-	     tr = f[0]
-	     ts = f[2]
-	     print "Tuned Parameters: ",solution.dec
-	     temp_scores = [runCart(solution.dec,tr,ts) for x in xrange(10)]
-	     evalScores[klass.__name__ + "Tuned"] = temp_scores
-	     median,iqr = stats(temp_scores)
-	     print "Median: ",median," IQR: ",iqr
-	     print "Time for Running: ",time.time() - tstart
+	       tr = f[0]
+	       ts = f[2]
+	       print "Tuned Parameters: ",solution.dec
+	       temp_scores = [runPredict(solution.dec,tr,ts) for x in xrange(10)]
+	       evalScores[klass.__name__] = temp_scores
+	       median,iqr = stats(temp_scores)
+	       print "Median: ",median," IQR: ",iqr
+	       print "Time for Running: ",time.time() - tstart
 
 	   print "==========================NaiveWhere=============================="
 	   #print "Baseline Finished: ",bmin,bmax
@@ -138,8 +140,8 @@ def multipleRun():
 	   print "Test: ",test
 	   tstart = time.time()
 	   print "Start Time: ",
-	   temp_scores = [NaiveCart(train,test) for _ in xrange(10)]
-	   evalScores['NaiveCart'] = temp_scores
+	   temp_scores = [NaiveWhere(train,test) for _ in xrange(10)]
+	   evalScores['NaiveWhere'] = temp_scores
 	   median,iqr = stats(temp_scores)
 	   print "Median: ",median," IQR: ",iqr
 	   print "Time for Experiment: ",time.time() - tstart
