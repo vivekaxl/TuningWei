@@ -366,7 +366,7 @@ class Seive2_Initial(SearchersBasic):
     print "return points is here"
     points = return_points(model,60)
     for point in points:
-      point.score = score(model,point)[-1]
+      point.score = scores(model,point)[-1]
     
     points = [point.dec+[point.score] for point in points]
     constraints = []
@@ -429,7 +429,7 @@ class Seive2_Initial(SearchersBasic):
         if (i*100+j) in dictionary:
           graph[int(sumn)].append(i*100+j)
         
-    high = 1e6
+    high = -1e6
     bsoln = None
     if len(graph.keys()) != 0:
       maxi = max(graph.keys())
@@ -440,13 +440,14 @@ class Seive2_Initial(SearchersBasic):
          #if(len(dictionary[x]) < 15: [self.n_i(model,dictionary,x) for _ in xrange(20)]
          #print "Seive2:A Number of points in ",maxi," is: ",len(dictionary[x])
          for y in dictionary[x]:
-           temp2 = scores(model,y)[-1]
-           if temp2 < high:
-             high = temp2
+           tempscores = scores(model,y)
+           print tempscores[-1]
+           if tempscores[-1] > high:
+             high = tempscores[-1]
              bsoln = y
       #print count  
-    print bsoln   
-    return Points(dec = bsoln.dec, obj = bsoln.scores[:-1]),model
+    print bsoln,tempscores[-1]   
+    return Points(dec = bsoln.dec, obj = tempscores[:-1]),model
 
   def one(self,model,lst): 
     def any(l,h):

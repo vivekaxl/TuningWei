@@ -88,10 +88,11 @@ def multipleRun():
 	   train = f[0]
 	   predict = f[1]
 	   test = f[2]
+	   evalScores=defaultdict(list)
 	   
 	   for klass in [TunedWhere]:#TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
 	     print "Model Name: %s"%klass.__name__
-	     evalScores=defaultdict(list)
+	     
 	     print ("Date: %s"%time.strftime("%d/%m/%Y"))
 	     bmin = -3.2801
 	     bmax = 5.6677
@@ -129,7 +130,7 @@ def multipleRun():
 	       ts = f[2]
 	       print "Tuned Parameters: ",solution.dec
 	       temp_scores = [runPredict(solution.dec,tr,ts) for x in xrange(10)]
-	       evalScores[klass.__name__] = temp_scores
+	       evalScores[searcher.__name__] = temp_scores
 	       median,iqr = stats(temp_scores)
 	       print "Median: ",median," IQR: ",iqr
 	       print "Time for Running: ",time.time() - tstart
