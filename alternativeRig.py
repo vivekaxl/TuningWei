@@ -4,6 +4,7 @@ import random
 import math
 
 from cart import *
+from randomforest import *
 from models import *
 from searchers import *
 from options import *
@@ -90,7 +91,7 @@ def multipleRun():
 	   test = f[2]
 	   evalScores=defaultdict(list)
 	   
-	   for klass in [TunedWhere]:#TunedCart]:#,DTLZ5,DTLZ6,DTLZ7]:
+	   for klass in [TunedRF]:#,DTLZ5,DTLZ6,DTLZ7]:
 	     print "Model Name: %s"%klass.__name__
 	     
 	     print ("Date: %s"%time.strftime("%d/%m/%Y"))
@@ -126,10 +127,10 @@ def multipleRun():
 	       print "High Score: ",solution,scores
 	       tstart = time.time()
 
-	       tr = f[0]
+	       tr = f[1]
 	       ts = f[2]
 	       print "Tuned Parameters: ",solution.dec
-	       temp_scores = [runPredict(solution.dec,tr,ts) for x in xrange(10)]
+	       temp_scores = [runRF(solution.dec,tr,ts) for x in xrange(10)]
 	       evalScores[searcher.__name__] = temp_scores
 	       median,iqr = stats(temp_scores)
 	       print "Median: ",median," IQR: ",iqr
@@ -141,8 +142,8 @@ def multipleRun():
 	   print "Test: ",test
 	   tstart = time.time()
 	   print "Start Time: ",
-	   temp_scores = [NaiveWhere(train,test) for _ in xrange(10)]
-	   evalScores['NaiveWhere'] = temp_scores
+	   temp_scores = [NaiveRF(train,test) for _ in xrange(10)]
+	   evalScores['NaiveRF'] = temp_scores
 	   median,iqr = stats(temp_scores)
 	   print "Median: ",median," IQR: ",iqr
 	   print "Time for Experiment: ",time.time() - tstart

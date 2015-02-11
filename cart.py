@@ -42,14 +42,14 @@ def buildtablefromfile(l):
 def weitransform(list):
 	result = []
 	for l in list:
-		if l >0: result.append("Defective")
+		if l >0.5: result.append("Defective")
 		else: result.append("Non-Defective")
 	return result
 
 def runCart(listpoints,train,predict):
 	indep,dep = buildtablefromfile(train)
-	from sklearn.tree import DecisionTreeClassifier
-	clf = DecisionTreeClassifier(max_features=listpoints[0],max_depth=int(listpoints[1]),min_samples_split=int(listpoints[2]),min_samples_leaf=int(listpoints[3]),max_leaf_nodes=int(listpoints[4]))
+	from sklearn.tree import DecisionTreeRegressor
+	clf = DecisionTreeRegressor(max_features=listpoints[0],max_depth=int(listpoints[1]),min_samples_split=int(listpoints[2]),min_samples_leaf=int(listpoints[3]))
 	clf = clf.fit(indep,dep)
 	actual_indep,actual_dep = buildtablefromfile(predict)
 	arr = clf.predict(actual_indep)
@@ -64,9 +64,9 @@ def runCart(listpoints,train,predict):
 	return scores[-1][-1]
 
 class TunedCart(ModelBasic):
-	def __init__(self,train,predict,n=5,objf=1):
-		self.minR = [0.01,1,2,1,2]
-		self.maxR = [1,50,20,20,100]
+	def __init__(self,train,predict,n=4,objf=1):
+		self.minR = [0.01,1,2,1]
+		self.maxR = [1,50,20,20]
 		self.n = n
 		self.minVal = 1e6
 		self.maxVal = -1e6
@@ -101,11 +101,16 @@ class TunedCart(ModelBasic):
   
 def NaiveCart(train,predict):
 	indep,dep = buildtablefromfile(train)
-	from sklearn.tree import DecisionTreeClassifier
-	clf = DecisionTreeClassifier(max_features=None,max_depth=None,min_samples_split=2,min_samples_leaf=1,max_leaf_nodes=None)
+	indep = [[float(x) for x in y] for y in indep]
+	dep = [[float(x) for x in y] for y in dep]
+	from sklearn.tree import DecisionTreeRegressor
+	clf = DecisionTreeRegressor()
 	clf = clf.fit(indep,dep)
 	actual_indep,actual_dep = buildtablefromfile(predict)
+	actual_indep = [[float(x) for x in y] for y in actual_indep]
+	actual_dep = [[float(x) for x in y] for y in actual_dep]
 	arr = clf.predict(actual_indep)
+	print ".................",actual_dep
 	#pdb.set_trace()
 	result = [i for i in arr]
 	# for x in xrange(len(result)):
@@ -114,4 +119,6 @@ def NaiveCart(train,predict):
 	scores = _Abcd(result,weitransform(actual_dep))
 	#scores = _Abcd([1,1,1,1,1],["Defective","Defective","Defective","Defective","Defective"])
 	return scores[-1][-1]
+
+
 

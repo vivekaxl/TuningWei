@@ -49,7 +49,7 @@ def weitransform(list):
 class TunedRF(ModelBasic):
 	def __init__(self,train,predict,n=4,objf=1):
 		self.minR=[2,2,100, 1]
-		self.maxR=[32,32,3000, 25]
+		self.maxR=[32,32,3000, 20]
 		self.n = n
 		self.minVal = 1e6
 		self.maxVal = -1e6
@@ -87,7 +87,7 @@ def runRF(listpoint,train,predict):
 
 	indep,dep = buildtablefromfile(train)
 	from sklearn.ensemble import RandomForestClassifier
-	rf = RandomForestClassifier(min_samples_split = int(listpoint[0]),min_samples_leaf = int(listpoint[1]), n_estimators = int(listpoint[2]), max_features = int(round(listpoint[3]))))
+	rf = RandomForestClassifier(min_samples_split = int(listpoint[0]),min_samples_leaf = int(listpoint[1]), n_estimators = int(listpoint[2]), max_features = int(round(listpoint[3])))
 	rf.fit(indep, dep)
 
 
@@ -107,7 +107,7 @@ def runRF(listpoint,train,predict):
 def NaiveRF(train,predict):
 	indep,dep = buildtablefromfile(train)
 	from sklearn.ensemble import RandomForestClassifier
-	rf = RandomForestClassifier(n_estimators=100)
+	rf = RandomForestClassifier()
 	rf.fit(indep, dep)
 
 

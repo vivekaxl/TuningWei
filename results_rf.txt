@@ -1,0 +1,1293 @@
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/ant/ant-1.3.csv
+Predict:  ./defectprediction/data/ant/ant-1.4.csv
+Test:  ./defectprediction/data/ant/ant-1.5.csv
+Start Time:  1423594987.28
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+012345678910111213141516lost it1718lost it19202122lost it2324lost it25lost it
+Time for tuning:  1019.65022516
+Number of Evaluation:  1079
+High Score:  {:dec [2.0, 2.24041, 100.0, 20.0] :obj [26.0] :score 26} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2, 2.24041056538766, 100, 20]
+Median:  17.0  IQR:  5.0
+Time for Running:  1.48531389236
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+in middle of desert
+in middle of desert
+in middle of desert
+14
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+{:changed False :dec [5.97266, 2.35683, 2695.32, 17.5488] :id 29567 :obj [-1.0] :scores [14.0, 14.0] :x -1 :xblock 1 :y -1 :yblock 2} 0
+Time for tuning:  238.387320995
+Number of Evaluation:  192
+High Score:  {:dec [5.97266, 2.35683, 2695.32, 17.5488] :obj [0.0] :score 0} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [5.972662738911605, 2.3568344226805253, 2695.31687634268, 17.548761329520126]
+Median:  17.0  IQR:  5.0
+Time for Running:  35.725687027
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/ant/ant-1.3.csv
+Test:  ./defectprediction/data/ant/ant-1.5.csv
+Start Time:  Median:  36.0  IQR:  10.0
+Time for Experiment:  0.154356002808
+defaultdict(<type 'list'>, {'DE': [17, 12, 22, 17, 17, 22, 17, 17, 27, 22], 'NaiveRF': [36, 43, 22, 31, 36, 22, 47, 43, 40, 36], 'Seive2_Initial': [17, 17, 22, 17, 17, 22, 22, 17, 22, 17]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	          DE ,    	1700  ,  	  500	   (     *     ------   |                   ),   17,    17,    17,    22,    27
+	   1 , 	Seive2_Initial ,    	1700  ,  	  500	   (     *              |                   ),   17,    17,    17,    22,    22
+	   2 , 	     NaiveRF ,    	3600  ,  	  900	   (           ---------|------*       ---- ),   22,    36,    36,    43,    47
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/camel/camel-1.0.csv
+Predict:  ./defectprediction/data/camel/camel-1.2.csv
+Test:  ./defectprediction/data/camel/camel-1.4.csv
+Start Time:  1423596281.28
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+012345678910111213141516171819lost it202122lost it23lost it24lost it25lost it
+Time for tuning:  2014.82603908
+Number of Evaluation:  1079
+High Score:  {:dec [12.8231, 2.0, 3000.0, 20.0] :obj [5.0] :score 5} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [12.823148679788051, 2, 3000, 20]
+Median:  44.0  IQR:  1.0
+Time for Running:  148.830847979
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+0
+0
+3
+0
+4
+0
+2
+0
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+3
+0
+3
+0
+1
+0
+0
+0
+0
+0
+0
+{:changed False :dec [4.09398, 2.23723, 1776.66, 17.0794] :id 59914 :obj [-1.0] :scores [4.0, 4.0] :x -1 :xblock 3 :y -1 :yblock 7} 0
+Time for tuning:  759.033568144
+Number of Evaluation:  425
+High Score:  {:dec [4.09398, 2.23723, 1776.66, 17.0794] :obj [0.0] :score 0} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [4.09397747197489, 2.2372254586389158, 1776.6588917977274, 17.07943046021758]
+Median:  58.0  IQR:  1.0
+Time for Running:  83.4594230652
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/camel/camel-1.0.csv
+Test:  ./defectprediction/data/camel/camel-1.4.csv
+Start Time:  Median:  5.0  IQR:  5.5
+Time for Experiment:  0.307101964951
+defaultdict(<type 'list'>, {'DE': [45, 44, 45, 45, 44, 44, 44, 43, 44, 45], 'NaiveRF': [7, 1, 5, 5, 5, 1, 7, 1, 1, 8], 'Seive2_Initial': [57, 58, 58, 57, 58, 58, 57, 59, 58, 57]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	     NaiveRF ,    	500  ,  	  400	   (  *                 |                   ),    1,     1,     5,     7,     8
+	   2 , 	          DE ,    	4400  ,  	  100	   (                    |        *          ),   44,    44,    44,    45,    45
+	   3 , 	Seive2_Initial ,    	5800  ,  	  100	   (                    |                  *),   57,    57,    58,    58,    59
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/ivy/ivy-1.1.csv
+Predict:  ./defectprediction/data/ivy/ivy-1.4.csv
+Test:  ./defectprediction/data/ivy/ivy-2.0.csv
+Start Time:  1423599139.05
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+0123456789101112lost it1314151617181920212223lost it24252627282930313233343536lost it37lost it38lost it
+Time for tuning:  2356.70910597
+Number of Evaluation:  1599
+High Score:  {:dec [32.0, 6.54089, 100.0, 19.2637] :obj [75.0] :score 75} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [32, 6.54088667888038, 100, 19.26374389328013]
+Median:  0.0  IQR:  0.0
+Time for Running:  1.23585510254
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+0
+51
+62
+57
+62
+52
+53
+53
+53
+52
+53
+62
+53
+67
+52
+58
+62
+47
+39
+46
+46
+52
+46
+0
+52
+52
+52
+0
+53
+0
+57
+52
+53
+46
+46
+57
+52
+0
+52
+51
+53
+40
+53
+0
+57
+62
+52
+68
+52
+0
+52
+61
+70
+53
+12
+52
+58
+69
+52
+40
+68
+31
+52
+67
+52
+39
+52
+61
+52
+62
+52
+39
+53
+69
+67
+67
+62
+0
+71
+53
+51
+46
+{:changed False :dec [13.9753, 8.02549, 2747.01, 19.5045] :id 90757 :obj [-1.0] :scores [71.0, 71.0] :x -1 :xblock -1 :y -1 :yblock -1} 46
+Time for tuning:  283.929264069
+Number of Evaluation:  265
+High Score:  {:dec [13.9753, 8.02549, 2747.01, 19.5045] :obj [46.0] :score 46} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [13.975340169440447, 8.025494299108605, 2747.0135158657304, 19.50452475975724]
+Median:  0.0  IQR:  0.0
+Time for Running:  32.8800330162
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/ivy/ivy-1.1.csv
+Test:  ./defectprediction/data/ivy/ivy-2.0.csv
+Start Time:  Median:  65.0  IQR:  4.75
+Time for Experiment:  0.217076063156
+defaultdict(<type 'list'>, {'DE': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'NaiveRF': [65, 62, 59, 65, 63, 63, 69, 69, 67, 68], 'Seive2_Initial': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	          DE ,    	0  ,  	    0	   (*                   |                   ),    0,     0,     0,     0,     0
+	   1 , 	Seive2_Initial ,    	0  ,  	    0	   (*                   |                   ),    0,     0,     0,     0,     0
+	   2 , 	     NaiveRF ,    	6500  ,  	  400	   (                    |              - *  ),   62,    63,    65,    68,    69
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/jedit/jedit-3.2.csv
+Predict:  ./defectprediction/data/jedit/jedit-4.0.csv
+Test:  ./defectprediction/data/jedit/jedit-4.1.csv
+Start Time:  1423601812.9
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+0123456789101112131415161718192021222324252627282930313233343536lost it37lost it383940lost it4142lost it4344454647lost it
+Time for tuning:  2736.37595701
+Number of Evaluation:  1959
+High Score:  {:dec [2.30764, 2.42257, 100.0, 15.9741] :obj [67.0] :score 67} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2.307637521616363, 2.4225678528854355, 100, 15.97409202757655]
+Median:  50.0  IQR:  1.5
+Time for Running:  2.63969492912
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+46
+50
+15
+15
+19
+23
+29
+24
+{:changed False :dec [2.7447, 4.3823, 2062.4, 14.2374] :id 121081 :obj [-1.0] :scores [50.0, 50.0] :x -1 :xblock -1 :y -1 :yblock -1} 24
+Time for tuning:  367.436352015
+Number of Evaluation:  191
+High Score:  {:dec [2.7447, 4.3823, 2062.4, 14.2374] :obj [24.0] :score 24} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2.744699273366203, 4.382303383576112, 2062.4015963895044, 14.237404863810617]
+Median:  37.0  IQR:  2.0
+Time for Running:  36.8066830635
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/jedit/jedit-3.2.csv
+Test:  ./defectprediction/data/jedit/jedit-4.1.csv
+Start Time:  Median:  61.0  IQR:  6.0
+Time for Experiment:  0.235648155212
+defaultdict(<type 'list'>, {'DE': [49, 50, 51, 50, 53, 47, 50, 46, 50, 52], 'NaiveRF': [57, 58, 59, 67, 58, 64, 57, 66, 64, 63], 'Seive2_Initial': [39, 37, 37, 37, 37, 39, 37, 40, 37, 39]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	Seive2_Initial ,    	3700  ,  	  200	   (* -                 |                   ),   37,    37,    37,    39,    40
+	   2 , 	          DE ,    	5000  ,  	  100	   (             ----*--|                   ),   47,    50,    50,    51,    53
+	   3 , 	     NaiveRF ,    	5900  ,  	  600	   (                    |     -       *---- ),   57,    58,    63,    64,    67
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/log4j/log4j-1.0.csv
+Predict:  ./defectprediction/data/log4j/log4j-1.1.csv
+Test:  ./defectprediction/data/log4j/log4j-1.2.csv
+Start Time:  1423604953.9
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+012345678910111213141516171819202122lost it23lost it24lost it25262728lost it293031323334lost it
+Time for tuning:  2405.50486302
+Number of Evaluation:  1439
+High Score:  {:dec [7.21144, 3.3199, 3000.0, 16.0953] :obj [73.0] :score 73} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [7.2114449099753415, 3.3198982840132194, 3000, 16.095324415519258]
+Median:  36.0  IQR:  0.75
+Time for Running:  30.1551589966
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+0
+0
+0
+0
+0
+15
+0
+0
+0
+0
+20
+0
+46
+0
+0
+0
+55
+57
+0
+0
+0
+0
+0
+0
+20
+0
+0
+0
+52
+0
+0
+49
+0
+0
+0
+0
+0
+49
+0
+0
+0
+0
+0
+0
+0
+49
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+46
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+49
+0
+55
+0
+0
+0
+0
+0
+36
+0
+0
+0
+0
+0
+0
+0
+52
+0
+0
+0
+0
+0
+0
+0
+0
+0
+5
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+20
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+36
+0
+0
+0
+28
+0
+0
+0
+0
+0
+32
+0
+0
+0
+0
+0
+66
+68
+28
+32
+46
+39
+52
+0
+{:changed False :dec [2.7447, 4.3823, 2062.4, 14.2374] :id 151398 :obj [-1.0] :scores [68.0, 68.0] :x -1 :xblock -1 :y -1 :yblock -1} 0
+Time for tuning:  420.011898041
+Number of Evaluation:  340
+High Score:  {:dec [2.7447, 4.3823, 2062.4, 14.2374] :obj [0.0] :score 0} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2.744699273366203, 4.382303383576112, 2062.4015963895044, 14.237404863810617]
+Median:  33.5  IQR:  1.0
+Time for Running:  17.7778789997
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/log4j/log4j-1.0.csv
+Test:  ./defectprediction/data/log4j/log4j-1.2.csv
+Start Time:  Median:  33.5  IQR:  3.75
+Time for Experiment:  0.138571977615
+defaultdict(<type 'list'>, {'DE': [36, 36, 36, 35, 36, 36, 35, 35, 36, 36], 'NaiveRF': [34, 37, 28, 30, 33, 41, 41, 36, 33, 33], 'Seive2_Initial': [33, 33, 34, 34, 33, 34, 33, 34, 33, 34]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	     NaiveRF ,    	3300  ,  	  300	   (      ---------   * |      ------------ ),   30,    33,    34,    37,    41
+	   1 , 	Seive2_Initial ,    	3300  ,  	  100	   (                  * |                   ),   33,    33,    34,    34,    34
+	   1 , 	          DE ,    	3600  ,  	  100	   (                    |---*               ),   35,    36,    36,    36,    36
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/lucene/lucene-2.0.csv
+Predict:  ./defectprediction/data/lucene/lucene-2.2.csv
+Test:  ./defectprediction/data/lucene/lucene-2.4.csv
+Start Time:  1423607797.41
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+0123456789101112131415161718192021lost it22lost it23242526272829lost it303132lost it333435lost it
+Time for tuning:  2522.27169394
+Number of Evaluation:  1479
+High Score:  {:dec [2.0, 2.58895, 100.0, 5.6845] :obj [58.0] :score 58} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2, 2.588945309385128, 100, 5.684501763965209]
+Median:  60.0  IQR:  1.0
+Time for Running:  1.34431505203
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+38
+15
+35
+34
+44
+34
+45
+45
+48
+32
+41
+24
+31
+0
+17
+0
+43
+38
+41
+26
+33
+30
+50
+36
+4
+44
+33
+49
+30
+37
+36
+38
+34
+42
+35
+47
+45
+33
+21
+38
+36
+36
+35
+36
+35
+31
+36
+37
+29
+35
+37
+37
+38
+8
+33
+{:changed False :dec [2.01964, 3.3803, 1977.7, 7.40884] :id 181397 :obj [-1.0] :scores [50.0, 50.0] :x -1 :xblock 1 :y -1 :yblock 4} 33
+Time for tuning:  329.372791052
+Number of Evaluation:  238
+High Score:  {:dec [2.01964, 3.3803, 1977.7, 7.40884] :obj [33.0] :score 33} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2.019639364446158, 3.380296078384321, 1977.6954446190337, 7.4088364256976025]
+Median:  60.0  IQR:  0.75
+Time for Running:  23.6384060383
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/lucene/lucene-2.0.csv
+Test:  ./defectprediction/data/lucene/lucene-2.4.csv
+Start Time:  Median:  52.0  IQR:  2.75
+Time for Experiment:  0.185748815536
+defaultdict(<type 'list'>, {'DE': [59, 61, 62, 59, 59, 60, 60, 59, 60, 60], 'NaiveRF': [51, 52, 49, 52, 55, 54, 49, 57, 53, 51], 'Seive2_Initial': [58, 61, 60, 60, 59, 61, 60, 60, 59, 60]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	     NaiveRF ,    	5200  ,  	  200	   (------   *     -----|---                ),   49,    51,    52,    54,    57
+	   2 , 	          DE ,    	6000  ,  	  100	   (                    |            *----- ),   59,    59,    60,    60,    62
+	   2 , 	Seive2_Initial ,    	6000  ,  	  100	   (                    |         ---*--    ),   59,    60,    60,    60,    61
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/mw1/mw1.1.csv
+Predict:  ./defectprediction/data/mw1/mw1.2.csv
+Test:  ./defectprediction/data/mw1/mw1.3.csv
+Start Time:  1423610672.97
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+0123456789101112lost it13lost it14lost it15lost it16lost it
+Time for tuning:  750.668467045
+Number of Evaluation:  719
+High Score:  {:dec [2.0, 2.0, 100.0, 10.6242] :obj [57.0] :score 57} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2, 2, 100, 10.62423538787127]
+Median:  0.0  IQR:  11.0
+Time for Running:  0.701665878296
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+{:changed False :dec [5.90672, 32.0, 512.012, 17.9428] :id 209686 :obj [-1.0] :scores [0.0, 0.0] :x -1 :xblock 2 :y -1 :yblock 5} 0
+Time for tuning:  207.643324852
+Number of Evaluation:  254
+High Score:  {:dec [5.90672, 32.0, 512.012, 17.9428] :obj [0.0] :score 0} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [5.906719949550993, 32, 512.0121846016744, 17.942758442443747]
+Median:  0.0  IQR:  0.0
+Time for Running:  2.68335413933
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/mw1/mw1.1.csv
+Test:  ./defectprediction/data/mw1/mw1.3.csv
+Start Time:  Median:  24.0  IQR:  38.5
+Time for Experiment:  0.123701095581
+defaultdict(<type 'list'>, {'DE': [11, 0, 11, 0, 0, 11, 0, 0, 0, 11], 'NaiveRF': [0, 43, 0, 36, 0, 20, 61, 28, 11, 50], 'Seive2_Initial': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	          DE ,    	0  ,  	 1100	   (*                   |                   ),    0,     0,     0,    11,    11
+	   1 , 	Seive2_Initial ,    	0  ,  	    0	   (*                   |                   ),    0,     0,     0,     0,     0
+	   2 , 	     NaiveRF ,    	2000  ,  	 3600	   (-------           * |       ----------- ),    0,    11,    28,    43,    61
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/poi/poi-1.5.csv
+Predict:  ./defectprediction/data/poi/poi-2.0.csv
+Test:  ./defectprediction/data/poi/poi-2.5.csv
+Start Time:  1423611634.16
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+012345678910111213141516171819202122232425lost it2627lost it282930lost it3132333435lost it363738394041lost it
+Time for tuning:  3929.28878403
+Number of Evaluation:  1719
+High Score:  {:dec [2.0, 2.0, 100.0, 6.85818] :obj [48.0] :score 48} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [2, 2, 100, 6.858179175048338]
+Median:  18.0  IQR:  0.0
+Time for Running:  1.34243106842
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+31
+35
+35
+31
+31
+35
+34
+34
+35
+31
+31
+34
+31
+31
+36
+34
+31
+29
+35
+31
+34
+31
+31
+34
+35
+31
+31
+34
+34
+31
+35
+34
+35
+34
+31
+35
+36
+31
+35
+34
+35
+31
+31
+36
+31
+28
+28
+28
+28
+33
+33
+36
+28
+36
+34
+33
+36
+36
+31
+34
+33
+36
+32
+36
+34
+31
+31
+31
+36
+31
+34
+34
+36
+34
+33
+36
+34
+28
+25
+36
+28
+34
+31
+31
+36
+36
+28
+28
+31
+36
+28
+31
+28
+31
+28
+33
+33
+36
+31
+31
+31
+35
+31
+31
+35
+36
+28
+34
+31
+{:changed False :dec [25.6463, 12.1031, 2059.09, 8.55078] :id 241610 :obj [-1.0] :scores [36.0, 36.0] :x -1 :xblock 1 :y -1 :yblock 4} 31
+Time for tuning:  397.138246059
+Number of Evaluation:  292
+High Score:  {:dec [25.6463, 12.1031, 2059.09, 8.55078] :obj [31.0] :score 31} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [25.64627358316117, 12.103053591604498, 2059.0870230844826, 8.550782051369438]
+Median:  4.0  IQR:  0.0
+Time for Running:  22.3641569614
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/poi/poi-1.5.csv
+Test:  ./defectprediction/data/poi/poi-2.5.csv
+Start Time:  Median:  70.5  IQR:  3.5
+Time for Experiment:  0.24346780777
+defaultdict(<type 'list'>, {'DE': [18, 19, 19, 17, 18, 18, 18, 18, 18, 17], 'NaiveRF': [68, 68, 69, 71, 72, 71, 74, 70, 66, 75], 'Seive2_Initial': [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	Seive2_Initial ,    	400  ,  	    0	   (*                   |                   ),    4,     4,     4,     4,     4
+	   2 , 	          DE ,    	1800  ,  	    0	   (       *            |                   ),   17,    18,    18,    18,    19
+	   3 , 	     NaiveRF ,    	7000  ,  	  300	   (                    |                *- ),   68,    69,    71,    72,    75
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/velocity/velocity-1.4.csv
+Predict:  ./defectprediction/data/velocity/velocity-1.5.csv
+Test:  ./defectprediction/data/velocity/velocity-1.6.csv
+Start Time:  1423615983.34
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+01234567lost it8lost it9lost it10lost it11lost it
+Time for tuning:  746.007090092
+Number of Evaluation:  519
+High Score:  {:dec [32.0, 14.8948, 906.773, 20.0] :obj [18.0] :score 18} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [32, 14.894834453334171, 906.7734282197139, 20]
+Median:  57.0  IQR:  0.75
+Time for Running:  10.1114292145
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+in middle of desert
+in middle of desert
+0
+0
+0
+11
+0
+0
+0
+18
+0
+0
+0
+0
+8
+0
+13
+0
+3
+0
+0
+0
+3
+8
+0
+0
+3
+0
+0
+8
+8
+0
+0
+0
+8
+8
+13
+0
+18
+10
+5
+0
+18
+0
+0
+0
+18
+18
+10
+0
+10
+0
+{:changed False :dec [4.7644, 18.4635, 777.211, 9.30898] :id 271771 :obj [-1.0] :scores [18.0, 18.0] :x -1 :xblock 2 :y -1 :yblock 7} 0
+Time for tuning:  317.577423096
+Number of Evaluation:  231
+High Score:  {:dec [4.7644, 18.4635, 777.211, 9.30898] :obj [0.0] :score 0} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [4.764395111383027, 18.463501855444136, 777.210786793041, 9.308980483398871]
+Median:  56.0  IQR:  1.0
+Time for Running:  6.31829404831
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/velocity/velocity-1.4.csv
+Test:  ./defectprediction/data/velocity/velocity-1.6.csv
+Start Time:  Median:  20.0  IQR:  3.25
+Time for Experiment:  0.149796009064
+defaultdict(<type 'list'>, {'DE': [57, 57, 57, 58, 56, 57, 56, 56, 57, 57], 'NaiveRF': [18, 16, 22, 20, 23, 19, 20, 20, 22, 18], 'Seive2_Initial': [56, 57, 55, 57, 56, 56, 55, 56, 55, 54]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	     NaiveRF ,    	2000  ,  	  200	   ( - * -              |                   ),   18,    19,    20,    22,    23
+	   2 , 	Seive2_Initial ,    	5600  ,  	  100	   (                    |                 * ),   55,    55,    56,    56,    57
+	   3 , 	          DE ,    	5700  ,  	  100	   (                    |                 -*),   56,    57,    57,    57,    58
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/xalan/xalan-2.4.csv
+Predict:  ./defectprediction/data/xalan/xalan-2.5.csv
+Test:  ./defectprediction/data/xalan/xalan-2.6.csv
+Start Time:  1423617053.51
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+012345678910111213lost it1415lost it16lost it17181920lost it21lost it
+Time for tuning:  4592.549299
+Number of Evaluation:  919
+High Score:  {:dec [3.64109, 2.18871, 459.893, 19.3022] :obj [20.0] :score 20} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [3.641091474199598, 2.1887120666964495, 459.89287939356313, 19.302179149711986]
+Median:  65.0  IQR:  0.0
+Time for Running:  29.3350701332
+Searcher:  Seive2_Initial
+Seive2_Initial . return points is here
+119
+in middle of desert
+in middle of desert
+0
+6
+2
+0
+0
+0
+0
+7
+3
+4
+5
+8
+1
+0
+1
+1
+0
+2
+2
+14
+0
+1
+9
+8
+8
+9
+0
+5
+7
+10
+6
+8
+10
+0
+1
+0
+1
+0
+0
+15
+7
+0
+3
+1
+1
+0
+1
+0
+7
+3
+6
+1
+3
+0
+0
+{:changed False :dec [4.4181, 3.75478, 2059.44, 14.3618] :id 302670 :obj [-1.0] :scores [15.0, 15.0] :x -1 :xblock -1 :y -1 :yblock -1} 0
+Time for tuning:  885.180531025
+Number of Evaluation:  236
+High Score:  {:dec [4.4181, 3.75478, 2059.44, 14.3618] :obj [0.0] :score 0} <function scores at 0x101ffb7d0>
+Tuned Parameters:  [4.418100038456938, 3.754776999204707, 2059.4432501166334, 14.361828749954093]
+Median:  66.0  IQR:  0.0
+Time for Running:  94.9775049686
+==========================NaiveWhere==============================
+Training :  ./defectprediction/data/xalan/xalan-2.4.csv
+Test:  ./defectprediction/data/xalan/xalan-2.6.csv
+Start Time:  Median:  18.5  IQR:  1.75
+Time for Experiment:  0.470673084259
+defaultdict(<type 'list'>, {'DE': [65, 65, 65, 67, 65, 65, 64, 65, 67, 65], 'NaiveRF': [18, 19, 20, 19, 18, 18, 18, 23, 20, 18], 'Seive2_Initial': [66, 66, 64, 66, 66, 66, 66, 66, 66, 66]})
+
+	rank , 	        name ,    	  med   , 	  iqr 
+----------------------------------------------------
+	   1 , 	     NaiveRF ,    	1800  ,  	  100	   (*---                |                   ),   18,    18,    19,    20,    23
+	   2 , 	          DE ,    	6500  ,  	    0	   (                    |                 * ),   65,    65,    65,    65,    67
+	   2 , 	Seive2_Initial ,    	6600  ,  	    0	   (                    |                  *),   66,    66,    66,    66,    66
+Model Name: TunedRF
+Date: 10/02/2015
+========================TunedWhere================================
+Training :  ./defectprediction/data/xerces/xerces-1.1.csv
+Predict:  ./defectprediction/data/xerces/xerces-1.2.csv
+Test:  ./defectprediction/data/xerces/xerces-1.3.csv
+Start Time:  1423622626.83
+Searcher:  DE
+DE . Options: 
+ Generation:  100
+Frontier size:  40
+f:  0.8
+cf:  0.9
+Lives:  5
+0123456789101112131415

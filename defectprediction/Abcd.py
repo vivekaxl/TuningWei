@@ -75,6 +75,8 @@ def _Abcd():
   train = list('aaaaaaaaaaaaaaaaaaaaaabbbbb')
   test  = train[:]
   random.shuffle(test)
+  print train
+  print test
   for actual, predicted in zip(train,test):
     abcd.tell(actual,predicted)
   global The
